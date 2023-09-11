@@ -10,8 +10,11 @@ function App() {
     <ThemeProvider theme={theme}>
     <Navbar/>
     <Home/>
-    {/* <SplideSlider/> */}
+    <SplideSlider/>
+    <SplideSlider/>
+
     </ThemeProvider>
+
     </>
   );
 }

@@ -43,9 +43,18 @@ function Navbar() {
     setAnchorElUser(null);
   };
 
+  window.onscroll = function () { 
+    if (window.scrollY > window.innerHeight) {
+      console.log('if');
+    } 
+    else {
+      console.log('else');
+    }
+};
+
   return (
-    <AppBar elevation={0} style={{backgroundColor: '#1C213C', border: '1px solid #1C213C'}} className='sm:px-12 px-6' position="static">
-      <Container style={{backgroundColor: '#151A30', borderRadius: '0 0 24px 24px', padding: '24px 32px'}}  className='mx-2 bg-main' maxWidth="xl">
+    <AppBar position='static' elevation={0} style={{backgroundColor: '#1C213C', border: '0px'}} className='sm:px-12 px-6' >
+      <Container fixed={true} style={{backgroundColor: '#151A30', borderRadius: '0 0 24px 24px', padding: '24px 32px'}}  className='mx-2 bg-main' maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             {/* <IconButton
