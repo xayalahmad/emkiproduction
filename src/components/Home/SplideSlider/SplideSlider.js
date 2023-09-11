@@ -2,7 +2,8 @@ import { Box } from "@mui/material"
 import SplideSlider1 from "./SplideSlider1"
 import SplideSlider2 from "./SplideSlider2"
 import SplideSlider3 from "./SplideSlider3"
-import SplideSlider4 from "./SplideSlider4"
+import SplideSliderMd from "./SplideSliderMd"
+import SplideSliderSm from "./SplideSliderSm"
 export default function SplideSlider(){
     return(
         <>
@@ -14,9 +15,13 @@ export default function SplideSlider(){
         <SplideSlider3/>
         </Box>
         </Box>
-        <Box className='xl:hidden flex'>
-        <SplideSlider4/>
+        <Box className='xl:hidden hidden sm:hidden md:flex'>
+        <SplideSliderMd/>
         </Box>
+        <Box className='flex xs:hidden sm:flex md:hidden'>
+        <SplideSliderSm/>
+        </Box>
+
         </>
     )
 }
