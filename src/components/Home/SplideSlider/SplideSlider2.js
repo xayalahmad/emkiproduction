@@ -10,8 +10,8 @@ export default function SplideSlider() {
     <Splide
       options={{
         direction: 'ttb',
-        height   : 'calc(100vh - 113.6px)',
-        width: '176px',
+        height   : '100vh',
+        width: '192px',
         type: "loop",
         // gap: "10px",
         drag: false,
@@ -25,17 +25,17 @@ export default function SplideSlider() {
           speed: 2
         }
       }}
-      className=" mx-3"
+      className=" mx-5"
       extensions={{ AutoScroll }}
     >
-      <SplideSlide  style={{minWidth: '176px'}}>
-        <img className="w-44 h-58 rounded-3xl" src={col2i1} alt="Image 1" />
+      <SplideSlide  style={{minWidth: '192px'}}>
+        <img className="w-48 h-60 rounded-3xl" src={col2i1} alt="Image 1" />
       </SplideSlide>
       <SplideSlide  style={{minWidth: '176px'}}>
-        <img className="w-44 h-58 rounded-3xl" src={col2i2} alt="Image 2" />
+        <img className="w-48 h-60 rounded-3xl" src={col2i2} alt="Image 2" />
       </SplideSlide>
       <SplideSlide  style={{minWidth: '176px'}}>
-        <img className="w-44 h-58 rounded-3xl" src={col2i3} alt="Image 2" />
+        <img className="w-48 h-60 rounded-3xl" src={col2i3} alt="Image 2" />
       </SplideSlide>
     </Splide>
   );

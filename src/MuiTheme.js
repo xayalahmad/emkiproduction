@@ -6,8 +6,11 @@ export const theme = createTheme({
   palette: {
       primarybg: '#151A30',
       main: '#1C213C',
-      contrastText: "#fff" 
+      contrastText: "#fff",
+      red: '#FF0000',
+      pink: '#e32682'
   },
+  
 //   typography: {
 //     button: {
 //       textTransform: 'none',

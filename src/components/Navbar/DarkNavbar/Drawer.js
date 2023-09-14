@@ -15,7 +15,7 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { useTranslation } from 'react-i18next';
 import Menu from '@mui/material/Menu';
-import BasicButton from '../Button/BasicButton/BasicButton'
+import BasicButton from '../BasicButton/BasicButton'
 import MenuItem from '@mui/material/MenuItem';
 export default function DrawerBar() {
     const { t, i18n } = useTranslation()
@@ -61,12 +61,12 @@ export default function DrawerBar() {
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
         >
-            <BasicButton name={t('Navbar.Home')}></BasicButton>
-            <BasicButton name={t('Navbar.Events')}></BasicButton>
-            <BasicButton name={t('Navbar.Blog')}></BasicButton>
-            <BasicButton name={t('Navbar.Sponsors')}></BasicButton>
-            <BasicButton name={t('Navbar.About')}></BasicButton>
-            <BasicButton name={t('Navbar.Contact')}></BasicButton>
+            <BasicButton key={t('Navbar.Home')} name={t('Navbar.Home')}></BasicButton>
+            <BasicButton key={t('Navbar.Events')} name={t('Navbar.Events')}></BasicButton>
+            <BasicButton key={t('Navbar.Blog')} name={t('Navbar.Blog')}></BasicButton>
+            <BasicButton key={t('Navbar.Sponsors')} name={t('Navbar.Sponsors')}></BasicButton>
+            <BasicButton key={t('Navbar.About')} name={t('Navbar.About')}></BasicButton>
+            <BasicButton key={t('Navbar.Contact')} name={t('Navbar.Contact')}></BasicButton>
         </Box>
     );
 
@@ -83,7 +83,7 @@ export default function DrawerBar() {
                         onClick={handleOpenNavMenu}
                         color="inherit"
                     >
-                        <MenuIcon  />
+                        <MenuIcon />
                     </IconButton >
                     </div>
                     <Drawer

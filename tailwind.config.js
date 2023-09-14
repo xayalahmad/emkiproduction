@@ -7,9 +7,10 @@ module.exports = {
     extend: {},
     colors: {
       transparent: 'transparent',
+      primarybg: '#151A30',
       main: '#1C213C',
-      secondary: '#151a30',
-      white: '#ffffff'
+      white: '#ffffff',
+      pink: '#e32682'
     },
   },
   plugins: [],

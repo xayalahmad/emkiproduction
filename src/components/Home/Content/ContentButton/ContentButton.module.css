@@ -1,0 +1,79 @@
+
+@import url('https://fonts.cdnfonts.com/css/euclid-circular-a');
+.buyTicket {
+    overflow: hidden;
+    /* min-width: 159px; */
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    /* background-color: #1C213C; */
+  color: #fff;
+  border-radius: 8px; 
+  border: none;
+  padding-right: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Euclid Circular A', sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.buyTicketIcon{
+    transition: all 0.5s;
+
+}
+/* .buyTicket:hover {
+    transition: all 0.5s;   
+    background-color: #1C213C;
+    color: #fff;
+    
+} */
+.buttonContainer{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+  border-radius: 8px; 
+  padding-left: 32px;
+  padding-right: 32px;
+  transition: all 0.5s;
+  margin-left: 10px;
+
+
+}
+.buyTicketIcon {
+    background-color: #1C213C;
+}
+.icon{
+    transition: all 0.5s;
+    /* fill: white; */
+    color: #1C213C;
+    background-color:  #fff;
+    border-radius: 20px;
+    padding: 5px;
+
+}
+.buttonContainer:hover {
+    transition: all 0.5s;
+
+}
+.buttonContainer:hover .buyTicketIcon {
+    transition: all 0.5s;
+
+    background-color:  #fff;
+}
+
+.buttonContainer:hover {
+    background-color:  #fff;
+    transition: all 0.5s;
+    color: #1C213C;
+}
+.buttonContainer:hover .buyTicket {
+    transition: all 0.5s;
+    color:  #1C213C;
+}
+.buttonContainer:hover .icon {
+    background-color:  #1C213C;
+    transition: all 0.5s;
+    color:  #fff;
+}
