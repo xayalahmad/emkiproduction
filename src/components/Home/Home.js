@@ -10,6 +10,8 @@ export default function Home() {
                         <Content />
                         <SplideSlider />
                     </Box>
+                        <SplideSlider />
+                        <SplideSlider />
                 </Box>
             </Box>
         </>

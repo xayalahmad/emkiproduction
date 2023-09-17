@@ -20,11 +20,13 @@ import styles from './Navbar.module.css'
 import { Link } from "react-router-dom";
 import Drawer from './Drawer';
 import Btp from '../../myButton/Btp/Btp';
-
-const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+import { useDispatch } from 'react-redux';
+import { setMood } from '../../../stores/mood';
+import { setPage } from '../../../stores/page';
 
 function LightNavbar() {
+  const dispatch = useDispatch()
+
   const { t, i18n } = useTranslation()
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -44,11 +46,21 @@ function LightNavbar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+  const changeMoodFalse = () => {
+    dispatch(setMood(false))
+    dispatch(setPage(false))
+    localStorage.setItem('navColor', false);
+    
+  }
+  const changeMoodTrue = () => {
+    dispatch(setMood(true))
+    dispatch(setPage(true))
+    localStorage.setItem('navColor', true);
 
-
+  }
   return (
     <AppBar position='fixed' elevation={0} style={{backgroundColor: '#fff', border: '0px'}} className='sm:px-12 px-6' >
-      <Container fixed={true} style={{backgroundColor: '#fff', borderRadius: '0 0 24px 24px', padding: '24px 32px', boxShadow: 'rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px'}}  className='mx-2 bg-main ' maxWidth="xl">
+      <Container fixed={true} style={{backgroundColor: '#fff', borderRadius: '0 0 24px 24px', padding: '24px 32px', boxShadow: 'rgba(17, 17, 26, 0.1) 0px 0px 16px'}}  className='mx-2 bg-main ' maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             {/* <IconButton
@@ -96,24 +108,24 @@ function LightNavbar() {
           <Box
            className={styles.items} 
            sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-         <Link to="/">{" "}
-              <BasicButton mode={true} name={t('Navbar.Home')}></BasicButton>
+            <Link onClick={changeMoodFalse} to="/">{" "}
+              <BasicButton mode={false} name={t('Navbar.Home')}></BasicButton>
                  </Link>
 
-                 <Link to="/events">{" "}
-                 <BasicButton mode={true} name={t('Navbar.Events')}></BasicButton>
+                 <Link onClick={changeMoodTrue} to="/events">{" "}
+                 <BasicButton mode={false} name={t('Navbar.Events')}></BasicButton>
                  </Link>
 
-                 <Link to="/">{" "}
-              <BasicButton mode={true} name={t('Navbar.Sponsors')}></BasicButton>
+                 <Link onClick={changeMoodTrue} to="/blog">{" "}
+              <BasicButton mode={false} name={t('Navbar.Blog')}></BasicButton>
                  </Link>
 
-                 <Link to="/events">{" "}
-              <BasicButton mode={true} name={t('Navbar.About')}></BasicButton>
+                 <Link onClick={changeMoodTrue} to="/">{" "}
+              <BasicButton mode={false} name={t('Navbar.Sponsors')}></BasicButton>
                  </Link>
 
-                 <Link to="/">{" "}
-              <BasicButton mode={true} name={t('Navbar.Contact')}></BasicButton>
+                 <Link onClick={changeMoodTrue} to="/events">{" "}
+              <BasicButton mode={false} name={t('Navbar.About')}></BasicButton>
                  </Link>
           </Box>
           </Box>

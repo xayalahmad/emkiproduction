@@ -1,9 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import language from "./language";
+import mood from "./mood";
+import page from "./page";
 
 const store = configureStore({
     reducer: {
-        language
+        language,
+        mood,
+        page
     }
 })
 

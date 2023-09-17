@@ -7,7 +7,14 @@ const resources = {
         translation: {
             Button: {
                 buyTicket: 'Buy Ticket',
-                events: 'Events'
+                events: 'Events',
+                readMore: 'Read More',
+                Home: 'Home',
+                Events: 'Events',
+                Blog: 'Blog',
+                Sponsors: 'Sponsors',
+                About: 'About us',
+                Contact: 'Contact'
             },
             Home: {
                 Content: {
@@ -34,7 +41,14 @@ const resources = {
         translation: {
             Button: {
                 buyTicket: 'Bilet al',
-                events: 'Tədbirlər'
+                events: 'Tədbirlər',
+                readMore: 'Ətraflı',
+                Home: 'Ana səhifə',
+                Events: 'Tədbirlər',
+                Blog: 'Blog',
+                Sponsors: 'Sponsorlar',
+                About: 'Haqqımızda',
+                Contact: 'Əlaqə'
             },
             Home: {
                 Content: {
@@ -61,7 +75,14 @@ const resources = {
         translation: {
             Button: {
                 buyTicket: 'Купить билет',
-                events: 'События'
+                events: 'События',
+                readMore: 'Подробнее',
+                Home: 'Дом',
+                Events: 'События',
+                Blog: 'Блог',
+                Sponsors: 'Спонсоры',
+                About: 'О нас',
+                Contact: 'Контакт'
             },
             Home: {
                 Content: {

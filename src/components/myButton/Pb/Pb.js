@@ -2,7 +2,7 @@ import { Box } from '@mui/material';
 import styles from './Pb.module.css'
 import { useTranslation } from 'react-i18next';
 
-export default function Pb(){
+export default function Pb({button}){
   const { t, i18n } = useTranslation()
 
     return(
@@ -11,7 +11,7 @@ export default function Pb(){
         <Box className={styles.cirle}>
         </Box>
         <Box className={styles.button}>
-        {t('Button.events')}
+        {t(`Button.${button}`)}
         </Box>
         </Box>
         </>

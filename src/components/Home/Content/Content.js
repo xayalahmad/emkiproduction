@@ -8,7 +8,6 @@ import Arrow from '../../../Image/arrow-right.svg'
 import styles from './Content.module.css'
 import Wtp from "../../myButton/Wtp/Wtp";
 import ContentButton from "./ContentButton/ContentButton";
-import Pb from "../../myButton/Pb/Pb";
 export default function Content() {
   const { t, i18n } = useTranslation()
 
@@ -27,7 +26,6 @@ export default function Content() {
         <Wtp/>
         </Box>
           <ContentButton/>
-      <Pb/>
       </Box>
       </Box>
     </>
