@@ -103,7 +103,7 @@ function DarkNavbar() {
             <Drawer />
           </Box>
           <Box className='flex items-center justify-between w-full'>
-          <Link to="/">{" "}
+          <Link onClick={changeMoodFalse}  to="/">{" "}
             <img src={Logo} />
           </Link>
             <Box
