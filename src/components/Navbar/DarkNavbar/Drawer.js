@@ -17,9 +17,14 @@ import { useTranslation } from 'react-i18next';
 import Menu from '@mui/material/Menu';
 import BasicButton from '../BasicButton/BasicButton'
 import MenuItem from '@mui/material/MenuItem';
+import { useDispatch } from 'react-redux';
 import { Link } from "react-router-dom";
+import { setMood } from '../../../stores/mood';
+import { setPage } from '../../../stores/page';
 
 export default function DrawerBar() {
+  const dispatch = useDispatch()
+
     const { t, i18n } = useTranslation()
 
     const [state, setState] = React.useState({
@@ -55,6 +60,19 @@ export default function DrawerBar() {
         setState({ ...state, [anchor]: open });
     };
 
+    const changeMoodFalse = () => {
+        dispatch(setMood(false))
+        dispatch(setPage(false))
+        localStorage.setItem('navColor', false);
+        
+      }
+      const changeMoodTrue = () => {
+        dispatch(setMood(true))
+        dispatch(setPage(true))
+        localStorage.setItem('navColor', true);
+    
+      }
+
     const list = (anchor) => (
         <Box
             className='flex flex-col bg-secondary h-full pt-16 text-center'
@@ -64,23 +82,23 @@ export default function DrawerBar() {
             onKeyDown={toggleDrawer(anchor, false)}
         >
 
-          <Link to="/">{" "}
+          <Link  onClick={changeMoodFalse} to="/">{" "}
               <BasicButton key={t('Navbar.Home')} name={t('Navbar.Home')}></BasicButton>
                  </Link>
 
-                 <Link to="/events">{" "}
+                 <Link onClick={changeMoodTrue} to="/events">{" "}
                  <BasicButton key={t('Navbar.Events')} name={t('Navbar.Events')}></BasicButton>
                  </Link>
 
-                 <Link to="/blog">{" "}
+                 <Link onClick={changeMoodTrue} to="/blog">{" "}
               <BasicButton key={t('Navbar.Blog')} name={t('Navbar.Blog')}></BasicButton>
                  </Link>
 
-                 <Link to="/">{" "}
+                 <Link  onClick={changeMoodTrue} to="/">{" "}
               <BasicButton key={t('Navbar.Sponsors')} name={t('Navbar.Sponsors')}></BasicButton>
                  </Link>
 
-                 <Link to="/events">{" "}
+                 <Link  onClick={changeMoodFalse} to="/about">{" "}
               <BasicButton key={t('Navbar.About')} name={t('Navbar.About')}></BasicButton>
                  </Link>
         </Box>

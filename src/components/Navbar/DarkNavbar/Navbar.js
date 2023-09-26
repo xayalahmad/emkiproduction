@@ -125,7 +125,7 @@ function DarkNavbar() {
               <BasicButton mode={true} name={t('Navbar.Sponsors')}></BasicButton>
                  </Link>
 
-                 <Link onClick={changeMoodTrue} to="/events">{" "}
+                 <Link onClick={changeMoodFalse} to="/about">{" "}
               <BasicButton mode={true} name={t('Navbar.About')}></BasicButton>
                  </Link>
 

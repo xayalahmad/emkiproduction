@@ -1,0 +1,148 @@
+@import url('https://fonts.cdnfonts.com/css/euclid-circular-a');
+
+.aboutBg{
+    /* height: 100vh; */
+
+    width: 100%;
+}
+.imgNameContainer{
+    position: relative;
+    top: -138px;
+    left: 24px;
+}
+
+.imgName1{
+    font-family: 'Euclid Circular A', sans-serif;
+    color: #C5CEE0;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 64px;
+}
+.imgName2{
+    font-family: 'Euclid Circular A', sans-serif;
+    -webkit-text-stroke: 0.8px #fff;
+    color: transparent;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 64px;  
+    padding-left: 95px;
+}
+.rightCon{
+    max-height: 499px;
+
+}
+.artistImg{
+    max-width: 406px;
+    height: min-content;
+    min-height: min-content;
+    border-radius: 8px;
+}
+
+.title1{
+    font-family: 'Euclid Circular A', sans-serif;
+    color: #C5CEE0;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 64px;
+}
+.title2{
+    font-family: 'Euclid Circular A', sans-serif;
+    -webkit-text-stroke: 0.8px #fff;
+    color: transparent;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 64px;
+    margin-bottom: 24px;
+}
+.desc{
+    color: white;
+font-size: 20px;
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 400;
+line-height: 28px;
+margin-bottom: 24px;
+}
+
+.content{
+    width: 58%;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media only screen and (max-width: 1349px){
+    .container{
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+    }
+    .artistImg{
+       /* display: none; */
+       /* margin-left: 50px; */
+    }
+    .aboutBg{
+        /* padding-bottom: 32px; */
+    }
+    .imgName2{
+        padding-left: 140px;
+    }
+    .imgNameContainer{
+        top: -138px;
+        left: -105px;
+        /* margin-left: 50px; */
+    }
+    
+}
+
+@media only screen and (max-width: 750px){
+.title1{
+    font-size: 40px;
+}
+.title2{
+    font-size: 40px;
+}
+    .artistImg{
+        width: 342px;
+       /* display: none; */
+    }
+    .imgName2{
+        padding-left: 80px;
+    }
+    .imgNameContainer{
+        top: -138px;
+        left: 24px;
+    }
+    
+}
+
+@media only screen and (max-width: 610px){
+    .title1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .title2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+        .artistImg{
+            width: 342px;
+           /* display: none; */
+        }
+    
+      
+    }
+
+    @media only screen and (max-width: 440px){
+       
+            .artistImg{
+                width: 302px;
+               /* display: none; */
+            }
+            .imgNameContainer{
+                top: -138px;
+                left: 12px;
+            }
+          
+        }

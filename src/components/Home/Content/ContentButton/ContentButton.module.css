@@ -47,9 +47,13 @@
 .icon{
     transition: all 0.5s;
     /* fill: white; */
+    border-radius: 20px;
+}
+.iconColor{
+    border-radius: 20px;
+    transition: all 0.5s;
     color: #1C213C;
     background-color:  #fff;
-    border-radius: 20px;
     padding: 5px;
 
 }
@@ -76,4 +80,22 @@
     background-color:  #1C213C;
     transition: all 0.5s;
     color:  #fff;
+}
+
+@media only screen and (max-width: 410px){
+    .icon{
+        display: none;
+    }
+    .buttonContainer{
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+      border-radius: 8px; 
+      padding-left: 20px;
+      padding-right: 20px;
+      transition: all 0.5s;
+      margin-left: 10px;
+    
+    
+    }
 }

@@ -26,10 +26,10 @@ export default function EventsCard() {
 </Box>
 
         <CardMedia
-        sx={{ maxWidth: 574, maxHeight:  251 , boxShadow: 0 }}
+        sx={{ maxWidth: 574,  height: 'min-content', maxHeight:  251 , boxShadow: 0 }}
           className={styles.image}
           component="img"
-          height="140"
+          // height="140"
           image={BlogImage}
           alt="Event image"
           />

@@ -25,6 +25,7 @@ export default function Content() {
         <Box className='flex items-center mr-0 sm:mr-8'>
         <Wtp/>
         </Box>
+        
           <ContentButton/>
       </Box>
       </Box>

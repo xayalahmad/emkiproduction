@@ -8,6 +8,8 @@ import { ThemeProvider } from "@mui/material";
 import Events from "./components/Events/Events";
 import Blog from "./components/Blog/Blog";
 import { useSelector } from 'react-redux';
+import About from "./components/About/About";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const { mood } = useSelector(state => state.mood)
@@ -21,7 +23,9 @@ function App() {
     <Route  path="/" element={<Home/>} />
     <Route  path="/events" element={<Events/>} />
     <Route  path="/blog" element={<Blog/>} />
+    <Route  path="/about" element={<About/>} />
     </Routes>
+    {/* <Footer/> */}
  
     </BrowserRouter>
     </ThemeProvider>

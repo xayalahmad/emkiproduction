@@ -29,6 +29,12 @@ const resources = {
                 Sponsors: 'Sponsors',
                 About: 'About us',
                 Contact: 'Contact'
+            },
+            About: {
+                Title1: "Unleash Your Event's Potential:",
+                Title2: 'Elevate Your Streaming with Our Expertise!',
+                Desc1: 'Show your event to the world through any platform. We are leaders in streaming and broadcast services for events, offering consulting services and development of complete systems for our clients in event broadcasting.',
+                Desc2: "EMKI production – we are more than just a organization – we are your passionate gateway to the electrifying world of live music and entertainment. We understand the magnetic pull of a live performance, the heart-pounding excitement as the lights dim, and the stage comes alive with the energy of artists pouring their souls into their craft. We're here to make sure you don't miss a beat."
             }
         }
     },
@@ -63,6 +69,12 @@ const resources = {
                 Sponsors: 'Sponsorlar',
                 About: 'Haqqımızda',
                 Contact: 'Əlaqə'
+            },
+            About: {
+                Title1: "Tədbirinizin Potensialını Açın:",
+                Title2: 'Təcrübəmizlə Yayımınızı yüksəldin!',
+                Desc1: 'Tədbirinizi istənilən platforma vasitəsilə dünyaya göstərin. Biz hadisələr üçün axın və yayım xidmətləri, konsaltinq xidmətləri təklif edən və hadisələrin yayımında müştərilərimiz üçün tam sistemlərin işlənib hazırlanmasında liderik.',
+                Desc2: "EMKI istehsalı - biz sadəcə bir təşkilat deyilik - biz canlı musiqi və əyləncənin ehtiraslı dünyasına açılan ehtiraslı qapınızıq. Biz canlı performansın maqnit cazibəsini, işıqlar söndükcə ürək döyüntüsünü anlayırıq və səhnə ruhlarını sənətlərinə atan sənətçilərin enerjisi ilə canlanır. Biz sizin heç bir ritmi qaçırmamağınızdan əmin olmaq üçün buradayıq."
             }
         }
     },
@@ -97,6 +109,12 @@ const resources = {
                 Sponsors: 'Спонсоры',
                 About: 'О нас',
                 Contact: 'Контакт'
+            },
+            About: {
+                Title1: "Раскройте потенциал вашего мероприятия:",
+                Title2: 'Улучшите качество своей потоковой передачи с помощью нашего опыта!',
+                Desc1: 'Покажите свое мероприятие миру через любую платформу. Мы являемся лидерами в сфере услуг потоковой передачи и трансляции мероприятий, предлагая консультационные услуги и разработку комплексных систем для наших клиентов в области трансляции мероприятий.',
+                Desc2: "EMKI Production — мы больше, чем просто организация — мы — ваши страстные ворота в захватывающий мир живой музыки и развлечений. Мы понимаем магнетическое притяжение живого выступления, душераздирающее волнение, когда свет тускнеет, и сцена оживает благодаря энергии артистов, вкладывающих душу в свое ремесло. Мы здесь, чтобы вы не пропустили ни одной детали."
             }
         }
     }

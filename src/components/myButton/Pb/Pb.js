@@ -7,12 +7,8 @@ export default function Pb({button}){
 
     return(
         <>
-        <Box className={styles.container}>
-        <Box className={styles.cirle}>
-        </Box>
         <Box className={styles.button}>
         {t(`Button.${button}`)}
-        </Box>
         </Box>
         </>
     )

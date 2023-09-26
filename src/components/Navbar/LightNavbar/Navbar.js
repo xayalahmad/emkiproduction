@@ -59,7 +59,7 @@ function LightNavbar() {
 
   }
   return (
-    <AppBar position='fixed' elevation={0} style={{backgroundColor: '#fff', border: '0px'}} className='sm:px-12 px-6' >
+    <AppBar position='fixed' elevation={0} style={{backgroundColor: 'transparent', border: '0px'}} className='sm:px-12 px-6' >
       <Container fixed={true} style={{backgroundColor: '#fff', borderRadius: '0 0 24px 24px', padding: '24px 32px', boxShadow: 'rgba(17, 17, 26, 0.1) 0px 0px 16px'}}  className='mx-2 bg-main ' maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -124,7 +124,7 @@ function LightNavbar() {
               <BasicButton mode={false} name={t('Navbar.Sponsors')}></BasicButton>
                  </Link>
 
-                 <Link onClick={changeMoodTrue} to="/events">{" "}
+                 <Link onClick={changeMoodFalse} to="/about">{" "}
               <BasicButton mode={false} name={t('Navbar.About')}></BasicButton>
                  </Link>
           </Box>

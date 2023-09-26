@@ -1,39 +1,15 @@
 @import url('https://fonts.cdnfonts.com/css/euclid-circular-a');
 
-.container {
-    margin: 30px 0;
-    display: flex;
-    position: relative;
-    width: 112px;
-}
 
 .button {
-    color: #151A30;
-    font-size: 24px;
     font-family: 'Euclid Circular A', sans-serif;
-    font-weight: 400;
-    position: absolute;
-    /* right: 0; */
-    top: -3px;
-    left: 13px;
+    background-color: #151A30;
+    color: #fff;
+    border: 1px solid #e32682;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 8px 32px;
+    display: inline-block;
+    margin-bottom: 20px;
 }
-
-.cirle {
-    border: 1px solid #E32682;
-    color: #E32682;
-    min-width: 40px;
-    max-width: 40px;
-    min-height: 40px;
-    max-height: 40px;
-    border-radius: 20px;
-    position: relative;
-    /* left: 25px; */
-    top: -5px;
-    transition: all 0.5s;
-}
-
-/* .container:hover .cirle {
-    max-width: 126px;
-
-    min-width: 126px;
-} */
