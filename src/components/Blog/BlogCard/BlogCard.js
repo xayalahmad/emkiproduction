@@ -8,11 +8,23 @@ import BlogImage from '../../../Image/Blog/BlogImg.png'
 import ellipse from '../../../Image/ellipse.svg'
 import styles from './Blog.module.css'
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+// import { setB } from '../../../stores/mood';
+import { setSelectedBlog } from '../../../stores/selectedBlog';
 
 export default function BlogCard({blog}) {
+  const dispatch = useDispatch()
+  const { selectedBlog } = useSelector(state => state.selectedBlog)
   const { t, i18n } = useTranslation()
 // console.log(blog);
+const BlogAdd = () => {
+  dispatch(setSelectedBlog(blog))
+}
+console.log(selectedBlog);
   return (
+        <Link onClick={BlogAdd}  to='/blogdetail'>
     <Card 
     className={styles.card}
     sx={{ maxWidth: 574, boxShadow: 0 }}>
@@ -57,5 +69,6 @@ export default function BlogCard({blog}) {
         </Box>
       {/* </CardActionArea> */}
     </Card>
+    </Link>
   );
 }

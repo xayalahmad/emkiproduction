@@ -10,6 +10,7 @@ import Blog from "./components/Blog/Blog";
 import { useSelector } from 'react-redux';
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
+import BlogInfoCard from "./components/Blog/BlogInfoCard/BlogInfoCard";
 
 function App() {
   const { mood } = useSelector(state => state.mood)
@@ -24,6 +25,7 @@ function App() {
     <Route  path="/events" element={<Events/>} />
     <Route  path="/blog" element={<Blog/>} />
     <Route  path="/about" element={<About/>} />
+    <Route  path="/blogdetail" element={<BlogInfoCard/>} />
     </Routes>
     {/* <Footer/> */}
  
