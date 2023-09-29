@@ -14,7 +14,9 @@ const resources = {
                 Blog: 'Blog',
                 Sponsors: 'Sponsors',
                 About: 'About us',
-                Contact: 'Contact'
+                Contact: 'Contact',
+                OurValues: 'Our values'
+
             },
             Home: {
                 Content: {
@@ -54,7 +56,9 @@ const resources = {
                 Blog: 'Blog',
                 Sponsors: 'Sponsorlar',
                 About: 'Haqqımızda',
-                Contact: 'Əlaqə'
+                Contact: 'Əlaqə',
+                OurValues: 'Dəyərlərimiz'
+
             },
             Home: {
                 Content: {
@@ -94,7 +98,8 @@ const resources = {
                 Blog: 'Блог',
                 Sponsors: 'Спонсоры',
                 About: 'О нас',
-                Contact: 'Контакт'
+                Contact: 'Контакт',
+                OurValues: 'Наши ценности'
             },
             Home: {
                 Content: {

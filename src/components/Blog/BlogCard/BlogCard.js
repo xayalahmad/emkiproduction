@@ -9,9 +9,9 @@ import ellipse from '../../../Image/ellipse.svg'
 import styles from './Blog.module.css'
 import { useTranslation } from 'react-i18next';
 
-export default function EventsCard() {
+export default function BlogCard({blog}) {
   const { t, i18n } = useTranslation()
-
+// console.log(blog);
   return (
     <Card 
     className={styles.card}
@@ -30,23 +30,24 @@ export default function EventsCard() {
           className={styles.image}
           component="img"
           // height="140"
-          image={BlogImage}
-          alt="Event image"
+          image={blog?.translations[0]?.imageSrc}
+          alt={blog?.translations[0]?.title}
           />
           </Box>
 
           <div className={styles.titleDateContainer}>
           <div className={styles.title} gutterBottom component="div">
-          Thomas Anders’s Baku concert
+          {blog?.translations[0]?.title}
           </div>
           <img className={styles.ellipse} src={ellipse}/>
           <div className={styles.date}>
-          12 October 2022
+          {blog?.date.split('T')[0]}
           </div>
           </div>
         <Box className={styles.content}>
           <Box className={styles.desc}>
-          Show your event to the world through any platform. We are leaders in streaming and broadcast services for events, offering consulting services and development of complete systems for our clients in...
+          {blog?.translations[0]?.content.split(' ').length > 25 ? `${blog?.translations[0]?.content.split(' ').splice(0,25).join(' ')} ...`  : blog?.translations[0]?.content}
+
           </Box>
           <Box className='flex'>
 

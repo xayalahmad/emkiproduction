@@ -8,17 +8,18 @@ import eventImage from '../../../Image/Events/eventImage.png'
 import ellipse from '../../../Image/ellipse.svg'
 import styles from './EventsCard.module.css'
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
-export default function EventsCard() {
+export default function EventsCard({event}) {
+  console.log(event);
   const { t, i18n } = useTranslation()
-
   return (
+    <Link target={'_blank'} to={event?.translations[0]?.ticketLink}>
     <Card 
     className={styles.card}
-    sx={{ maxWidth: 370, boxShadow: 0 }}>
+    sx={{ maxWidth: 375, boxShadow: 0 }}>
       {/* <CardActionArea> */}
       {/* <Box className={styles.ticketContainer}> */}
-
 {/* </Box>  */}
 <Box className={styles.imageContainer}>
 <Box className={styles.ticket} gutterBottom component="div">
@@ -26,11 +27,11 @@ export default function EventsCard() {
 </Box>
 
         <CardMedia
-        sx={{ maxWidth: 370, maxHeight:  370 , boxShadow: 0 }}
+        sx={{ maxWidth: 375, width: 375, maxHeight:  375, boxShadow: 0 }}
           className={styles.image}
           component="img"
           height="140"
-          image={eventImage}
+          image={event?.translations[0]?.imageSrc ? event?.translations[0]?.imageSrc : 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png'}
           alt="Event image"
           />
           </Box>
@@ -38,24 +39,25 @@ export default function EventsCard() {
         <CardContent className={styles.content}>
           <Box className='flex justify-between'>
           <Box className={styles.title} gutterBottom component="div">
-          Serdar Ortaç 
+          {event?.translations[0]?.title}
           </Box>
           <Box className={styles.price}>
-          30₼ - 300₼
+          {event?.minPrice} - {event?.maxPrice}₼
           </Box>
           </Box>
           <Box className='flex'>
 
           <Box className={styles.date}>
-          16 October 2023 
+          {event?.date.split('T')[0]}
           </Box>
           <img className={styles.ellipse} src={ellipse}/>
           <Box className={styles.hall}>
-          Heydər Əliyev Sarayı
+          {event?.translations[0]?.place}
           </Box>
           </Box>
         </CardContent>
       {/* </CardActionArea> */}
     </Card>
+    </Link>
   );
 }

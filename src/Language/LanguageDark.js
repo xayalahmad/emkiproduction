@@ -39,7 +39,6 @@ export default function Language({ color, bgColor }) {
     }
     getUsers()
 }, [])
-console.log(getlang[2]);
   return (
     <>
       <FormControl sx={{ minWidth: 70 }}>
@@ -86,7 +85,7 @@ console.log(getlang[2]);
           <MenuItem onClick={() => clickHandle('EN')} value={20}><Box className={styles.item}>EN</Box></MenuItem>
           <MenuItem onClick={() => clickHandle('RU')} value={30}><Box className={styles.item}>RU</Box></MenuItem> */}
     {getlang.map((q, i) => 
-              <MenuItem key={i} onClick={() => clickHandle(`${q.title}`, `${q.id}`)}  value={q.id} ><Box className={styles.item}>{q.title}</Box></MenuItem>
+              <MenuItem key={i} onClick={() => clickHandle(`${q.title}`, `${q.id}`)}  value={q.id} ><Box className={styles.item}>{q.code}</Box></MenuItem>
               
             )}
 

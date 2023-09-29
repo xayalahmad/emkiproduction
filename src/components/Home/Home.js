@@ -1,6 +1,8 @@
 import SplideSlider from "./SplideSlider/SplideSlider";
 import Content from "./Content/Content";
 import { Box } from "@mui/material";
+import OurValues from "../OurValues/OurValues";
+import Events from "../Events/Events";
 export default function Home() {
     return (
         <>
@@ -12,6 +14,8 @@ export default function Home() {
                     </Box>
                 </Box>
             </Box>
+                <Events filter={3}/>
+                    <OurValues/>
         </>
     )
 }
