@@ -31,7 +31,7 @@ export default function SplideSlider() {
           speed: -2
         }
       }}
-      className="bg-main "
+      className="pb-8"
       extensions={{ AutoScroll }}
     >
       <SplideSlide>

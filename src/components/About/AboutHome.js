@@ -13,13 +13,10 @@ export default function AboutHome() {
         <>
             <Box
                 style={{
-                    backgroundImage: `url(${aboutImg})`,
-                    backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat',
-                    height: '100vh',
+                    // backgroundImage: `url(${aboutImg})`,
                     borderRadius: '0 0 40px 40px',
-                    backgroundColor: '#151A30'
+           background: 'linear-gradient(257deg, #151A30 0%, #211D4D 28%, #271630 70%, #0F1836 100%), linear-gradient(0deg, rgba(21, 26, 48, 0.40) 0%, rgba(21, 26, 48, 0.40) 100%)'
+
                 }}
                 className={styles.aboutBg}
             >
@@ -36,9 +33,7 @@ export default function AboutHome() {
                             <Box className={styles.desc}>
                             {t('About.Desc1')}
                             </Box>
-                            <Box className={styles.desc}>
-                            {t('About.Desc2')}
-                            </Box>
+                  
                         </Box>
 
 

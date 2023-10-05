@@ -4,6 +4,9 @@
     height: 100vh;
 
     width: 100%;
+    padding-top: 30px;
+    background: linear-gradient(257deg, #151A30 0%, #211D4D 28%, #271630 70%, #0F1836 100%), linear-gradient(0deg, rgba(21, 26, 48, 0.40) 0%, rgba(21, 26, 48, 0.40) 100%);
+
 }
 .imgNameContainer{
     position: relative;
@@ -11,60 +14,37 @@
     left: 24px;
 }
 
-.imgName1{
-    font-family: 'Euclid Circular A', sans-serif;
-    color: #C5CEE0;
-    font-size: 60px;
-    font-weight: 500;
-    line-height: 64px;
-}
-.imgName2{
-    font-family: 'Euclid Circular A', sans-serif;
-    -webkit-text-stroke: 0.8px #fff;
-    color: transparent;
-    font-size: 60px;
-    font-weight: 500;
-    line-height: 64px;  
-    padding-left: 95px;
-}
+
 .rightCon{
-    max-height: auto;
+    max-height: 499px;
 
 }
 .artistImg{
-    max-width: 406px;
+    max-width: 506px;
     height: min-content;
     min-height: min-content;
-    border-radius: 8px;
 }
 
 .title1{
     font-family: 'Euclid Circular A', sans-serif;
-    color: #C5CEE0;
+    color: #E4E9F2;
     font-size: 48px;
     font-weight: 500;
     line-height: 64px;
+    margin-bottom: 16px;
+
 }
-.title2{
-    font-family: 'Euclid Circular A', sans-serif;
-    -webkit-text-stroke: 0.8px #fff;
-    color: transparent;
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 64px;
-    margin-bottom: 24px;
-}
+
 .desc{
     color: white;
 font-size: 20px;
     font-family: 'Euclid Circular A', sans-serif;
     font-weight: 400;
 line-height: 28px;
-margin-bottom: 24px;
 }
 
 .content{
-    width: 58%;
+    width: 50%;
 }
 .container{
     display: flex;
@@ -72,6 +52,9 @@ margin-bottom: 24px;
     align-items: center;
 }
 @media only screen and (max-width: 1349px){
+    .aboutBg{
+        height: auto;
+    }
     .container{
         flex-direction: column;
     }
@@ -81,13 +64,11 @@ margin-bottom: 24px;
     .artistImg{
        /* display: none; */
        /* margin-left: 50px; */
-       /* margin-bottom: 40px; */
+       margin-bottom: 40px;
        margin-top: 40px;
     }
     .aboutBg{
         /* padding-bottom: 32px; */
-        height: auto;
-
     }
     .imgName2{
         padding-left: 140px;
@@ -111,13 +92,7 @@ margin-bottom: 24px;
         width: 342px;
        /* display: none; */
     }
-    .imgName2{
-        padding-left: 80px;
-    }
-    .imgNameContainer{
-        top: -138px;
-        left: 24px;
-    }
+ 
     
 }
 
@@ -144,9 +119,6 @@ margin-bottom: 24px;
                 width: 302px;
                /* display: none; */
             }
-            .imgNameContainer{
-                top: -138px;
-                left: 12px;
-            }
+        
           
         }

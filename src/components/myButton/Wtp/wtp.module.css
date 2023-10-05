@@ -21,7 +21,7 @@
 }
 .buyTicketIcon{
     transition: all 0.5s;
-
+width: 36px;
 }
 /* .buyTicket:hover {
     transition: all 0.5s;   

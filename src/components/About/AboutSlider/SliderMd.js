@@ -14,9 +14,9 @@ export default function SliderXl({artistsAll}) {
         width: '100%',
         type: "loop",
         // gap: "10px",
-        drag: false,
-        arrows: true,
-        pagination: true,
+        drag: true,
+        arrows: false,
+        pagination: false,
         perPage: 1,
         autoScroll: {
           pauseOnHover: false,
@@ -30,9 +30,9 @@ export default function SliderXl({artistsAll}) {
     >
          {artistsAll.length > 0 ? artistsAll.map((q, i) => 
 
-<SplideSlide  style={{maxWidth: '700px'}} className={`${styles.sliderContainer} h-96`}>
+<SplideSlide  style={{maxWidth: '500px'}} className={`${styles.sliderContainer} h-72`}>
   <div className={styles.sliderText}>{q.name}</div>
-  <img className={`${styles.sliderImg} h-96`} src={q.imageSrc} alt="Image 1" />
+  <img className={`${styles.sliderImg} h-72`} src={q.imageSrc} alt="Image 1" />
 </SplideSlide>
 
 )  : ''}

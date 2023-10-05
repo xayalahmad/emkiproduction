@@ -31,7 +31,7 @@ export default function SplideSlider() {
           speed: -2
         }
       }}
-      className="bg-main "
+      className=""
       extensions={{ AutoScroll }}
     >
       <SplideSlide className="mx-auto flex-col items-center justify-center">

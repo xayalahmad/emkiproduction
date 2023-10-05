@@ -22,12 +22,11 @@ export default function BlogCard({blog}) {
 const BlogAdd = () => {
   dispatch(setSelectedBlog(blog))
 }
-console.log(selectedBlog);
   return (
         <Link onClick={BlogAdd}  to='/blogdetail'>
     <Card 
     className={styles.card}
-    sx={{ maxWidth: 574, boxShadow: 0 }}>
+    sx={{ maxWidth: 375, boxShadow: 0 }}>
       {/* <CardActionArea> */}
       {/* <Box className={styles.ticketContainer}> */}
 
@@ -38,7 +37,7 @@ console.log(selectedBlog);
 </Box>
 
         <CardMedia
-        sx={{ maxWidth: 574,  height: 'min-content', maxHeight:  251 , boxShadow: 0 }}
+        sx={{ maxWidth: 375,  height: '249.94px', maxHeight:  251 , boxShadow: 0 }}
           className={styles.image}
           component="img"
           // height="140"
@@ -51,21 +50,15 @@ console.log(selectedBlog);
           <div className={styles.title} gutterBottom component="div">
           {blog?.translations[0]?.title}
           </div>
-          <img className={styles.ellipse} src={ellipse}/>
-          <div className={styles.date}>
-          {blog?.date.split('T')[0]}
-          </div>
+          {/* <img className={styles.ellipse} src={ellipse}/> */}
+         
           </div>
         <Box className={styles.content}>
           <Box className={styles.desc}>
-          {blog?.translations[0]?.content.split(' ').length > 25 ? `${blog?.translations[0]?.content.split(' ').splice(0,25).join(' ')} ...`  : blog?.translations[0]?.content}
+          {blog?.translations[0]?.content.split(' ').length > 10 ? `${blog?.translations[0]?.content.split(' ').splice(0,10).join(' ')} ...`  : blog?.translations[0]?.content}
 
           </Box>
-          <Box className='flex'>
-
-     
-
-          </Box>
+       
         </Box>
       {/* </CardActionArea> */}
     </Card>

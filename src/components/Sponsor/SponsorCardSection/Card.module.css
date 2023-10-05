@@ -1,0 +1,73 @@
+.cardContainer{
+    /* overflow-x: visible; */
+    /* white-space: nowrap; */
+    display: flex;
+    overflow-x: scroll;
+    padding: 48px 0;
+}
+
+.card{
+    box-sizing: border-box;
+    min-width: 186px;
+    min-height: 186px;
+    max-width: 186px;
+    max-height: 186px;
+    background-color: #222b45;
+    border-radius: 16px;
+    padding: 25px;
+    border: 2px solid #e32682;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 32px;
+}
+
+.card:last-child{
+    margin-right: 0;
+
+}
+.cardImg{
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+::-webkit-scrollbar {
+    transition: all 0.5s;
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    transition: all 0.5s;
+    border-radius: 8px;
+    background-color: #151A30;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    transition: all 0.5s;
+    background-color: #e32682;
+    border-radius: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    transition: all 0.5s;
+    background-color: #db1374;
+  }
+  
+
+  element::-ms-scrollbar {
+    width: 10px;
+  }
+  
+  element::-ms-scrollbar-track {
+    background-color: #151A30;
+  }
+  
+  element::-ms-scrollbar-thumb {
+    background-color: #e32682;
+    border-radius: 5px;
+  }
+  
+  element::-ms-scrollbar-thumb:hover {
+    background-color: #db1374;
+  }

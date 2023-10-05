@@ -14,9 +14,9 @@ export default function SliderXl({artistsAll}) {
         width: '100%',
         type: "loop",
         // gap: "10px",
-        drag: false,
-        arrows: true,
-        pagination: true,
+        drag: true,
+        arrows: false,
+        pagination: false,
         perPage: 2,
         autoScroll: {
           pauseOnHover: false,

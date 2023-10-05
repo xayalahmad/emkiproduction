@@ -120,7 +120,7 @@ function LightNavbar() {
               <BasicButton mode={false} name={t('Navbar.Blog')}></BasicButton>
                  </Link>
 
-                 <Link onClick={changeMoodTrue} to="/">{" "}
+                 <Link onClick={changeMoodFalse} to="/sponsor">{" "}
               <BasicButton mode={false} name={t('Navbar.Sponsors')}></BasicButton>
                  </Link>
 

@@ -61,7 +61,7 @@ function DarkNavbar() {
   }
   return (
     <AppBar position='fixed' elevation={0} style={{ backgroundColor: 'transparent', border: '0px' }} className='sm:px-12 px-6' >
-      <Container fixed={true} style={{ backgroundColor: '#151A30', borderRadius: '0 0 24px 24px', padding: '24px 32px', boxShadow: 'rgba(17, 17, 26, 0.1) 0px 0px 16px' }} className='mx-2 bg-main' maxWidth="xl">
+      <Container fixed={true} style={{ backgroundColor: '#151A30', padding: '24px 32px', boxShadow: 'rgba(17, 17, 26, 0.1) 0px 0px 16px' }} className={styles.navbar}>
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             {/* <IconButton
@@ -121,7 +121,7 @@ function DarkNavbar() {
               <BasicButton mode={true} name={t('Navbar.Blog')}></BasicButton>
                  </Link>
 
-                 <Link onClick={changeMoodTrue} to="/">{" "}
+                 <Link onClick={changeMoodFalse} to="/sponsor">{" "}
               <BasicButton mode={true} name={t('Navbar.Sponsors')}></BasicButton>
                  </Link>
 

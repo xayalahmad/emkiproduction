@@ -93,7 +93,7 @@ export default function DrawerBar() {
               <BasicButton key={t('Navbar.Blog')} name={t('Navbar.Blog')}></BasicButton>
                  </Link>
 
-                 <Link  onClick={changeMoodTrue}  to="/">{" "}
+                 <Link  onClick={changeMoodFalse}  to="/sponsor">{" "}
               <BasicButton key={t('Navbar.Sponsors')} name={t('Navbar.Sponsors')}></BasicButton>
                  </Link>
 

@@ -11,3 +11,17 @@
     }
 }
 
+
+.navbar{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #151a30;
+    border-radius: 0 0 24px 24px;
+}
+
+@media only screen and (max-width: 1080px){
+    .navbar{
+        border-radius: 0;
+        width: 100%;
+    }
+}
