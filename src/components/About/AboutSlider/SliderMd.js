@@ -8,25 +8,25 @@ import styles from './Slider.module.css'
 export default function SliderXl({artistsAll}) {
   return (
     <Splide
-      options={{
-        direction: 'ltr',
-        // height   : '240px',
-        width: '100%',
-        type: "loop",
-        // gap: "10px",
-        drag: true,
-        arrows: false,
-        pagination: false,
-        perPage: 1,
-        autoScroll: {
-          pauseOnHover: false,
-          pauseOnFocus: false,
-          rewind: false,
-          speed: 2
-        },
-      }}
+        options={{
+          direction: 'ltr',
+          // height   : '240px',
+          width: '100%',
+          type: "loop",
+          // gap: "10px",
+          drag: true,
+          arrows: true,
+          pagination: false,
+          perPage: 2,
+          autoScroll: {
+            pauseOnHover: false,
+            pauseOnFocus: false,
+            rewind: false,
+            speed: 2
+          },
+        }}
       className={`${styles.slider} shadow-none`}
-      extensions={{ AutoScroll }}
+      // extensions={{ AutoScroll }}
     >
          {artistsAll.length > 0 ? artistsAll.map((q, i) => 
 

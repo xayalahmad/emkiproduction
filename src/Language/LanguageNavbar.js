@@ -11,15 +11,13 @@ import { setLanguage } from '../stores/language';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { useState, useEffect } from 'react';
-export default function Language({ color, bgColor }) {
+export default function Language({color, bgColor}) {
   const dispatch = useDispatch()
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-  
+  const { language } = useSelector(state => state.language)
   const [getlang, setGetLang] = useState([]);
   const [langCode, setLangCode] = useState('');
-  const { language } = useSelector(state => state.language)
-  const { t, i18n } = useTranslation()
+  const {t, i18n} = useTranslation()
+  
   const clickHandle = (q) => {
     console.log(q);
     dispatch(setLanguage(q.id))
@@ -36,6 +34,7 @@ export default function Language({ color, bgColor }) {
     setAge(event.target.value);
   };
 
+
   useEffect(() => {
     const getUsers = async () => {
       await fetch('http://logicbackend-001-site1.htempurl.com/api/Language')
@@ -48,17 +47,16 @@ export default function Language({ color, bgColor }) {
   return (
     <>
       <FormControl sx={{ minWidth: 70 }}>
-        {langCode ?
-          ''
+      {langCode ?
+         ''
           :
-          <Box className={`${styles.itemDark} ${styles.language}  ${styles.languageDark}`}>
-            {languageLocal}
-          </Box>
+          <Box className={`${styles.itemNav} ${styles.language}  ${styles.languageDark}`}>
+          {languageLocal}
+        </Box>
         }
-        
         <Select
-          sx={{
-            color: { color },
+         sx={{
+            color: {color},
             '.MuiOutlinedInput-notchedOutline': {
               borderColor: { bgColor },
               border: 'none'
@@ -72,12 +70,12 @@ export default function Language({ color, bgColor }) {
               border: 'none'
             },
             '.MuiSvgIcon-root': {
-              fill: '#ffffff',
+                fill: '#f7f9fc',
             },
-
+    
           }}
           color='red'
-          className='h-10'
+         className='h-10'
           value={age}
           onChange={handleChange}
           displayEmpty
@@ -85,17 +83,14 @@ export default function Language({ color, bgColor }) {
         >
           {/* <MenuItem onClick={() => clickHandle('AZ')} className={styles.item} value={10}><Box className={styles.item}>AZ</Box>
           </MenuItem>
-          <MenuItem onClick={() => clickHandle('EN')} value={20}><Box className={styles.item}>EN</Box></MenuItem>
-          <MenuItem onClick={() => clickHandle('RU')} value={30}><Box className={styles.item}>RU</Box></MenuItem> */}
-    {getlang.map((q, i) => 
-              <MenuItem key={i} onClick={() => clickHandle(q)}  value={q.id} ><Box className={styles.item}>{q.code}</Box></MenuItem>
+          <MenuItem onClick={() => clickHandle('EN')}  value={20}><Box className={styles.item}>EN</Box></MenuItem>
+          <MenuItem onClick={() => clickHandle('RU')}  value={30}><Box className={styles.item}>RU</Box></MenuItem> */}
+     {getlang.map((q, i) => 
+              <MenuItem key={i} onClick={() => clickHandle(q)}  value={q.id} ><Box className={styles.languageNav}>{q.code}</Box></MenuItem>
               
             )}
-
         </Select>
-        
-
       </FormControl>
     </>
   );
-} 
+}

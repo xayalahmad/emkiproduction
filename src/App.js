@@ -9,9 +9,9 @@ import Events from "./components/Events/Events";
 import Blog from "./components/Blog/Blog";
 import { useSelector } from 'react-redux';
 import About from "./components/About/About";
-// import Footer from "./components/FooterLight/Footer";
 import BlogInfoCard from "./components/Blog/BlogInfoCard/BlogInfoCard";
 import Sponsor from "./components/Sponsor/Sponsor";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const { mood } = useSelector(state => state.mood)
@@ -29,7 +29,7 @@ function App() {
     <Route  path="/blogdetail" element={<BlogInfoCard/>} />
     <Route  path="/sponsor" element={<Sponsor/>} />
     </Routes>
-    {/* <Footer/> */}
+    <Footer/>
  
     </BrowserRouter>
     </ThemeProvider>

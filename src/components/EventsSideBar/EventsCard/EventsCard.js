@@ -5,7 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Box, CardActionArea } from '@mui/material';
 import eventImage from '../../../Image/Events/eventImage.png'
-import ellipse from '../../../Image/ellipse.svg'
+import ellipse from '../../../Image/ellipse2.svg'
 import styles from './EventsCard.module.css'
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
@@ -13,27 +13,24 @@ import { Link } from 'react-router-dom';
 export default function EventsCard({event}) {
   const { t, i18n } = useTranslation()
   return (
-    <Link target={'_blank'} to={event?.translations[0]?.ticketLink}>
+    <Link className={styles.sidebarCardLink} target={'_blank'} to={event?.translations[0]?.ticketLink}>
     <Box 
     className={styles.card}
     sx={{ boxShadow: 0 }}>
       {/* <CardActionArea> */}
       {/* <Box className={styles.ticketContainer}> */}
 {/* </Box>  */}
-<Box className={styles.imageContainer}>
-<Box className={styles.ticket} gutterBottom component="div">
-{t('Button.readMore')}
-</Box>
-
+{/* <Box className={styles.imageContainer}> */}
         <CardMedia
         sx={{  boxShadow: 0 }}
           className={styles.image}
           component="img"
-          height="140"
+          // height="104"
+          // width="104"
           image={event?.translations[0]?.imageSrc ? event?.translations[0]?.imageSrc : 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png'}
           alt={event?.translations[0]?.title}
           />
-          </Box>
+          {/* </Box> */}
 
         <CardContent className={styles.content}>
           <Box className='flex justify-between'>

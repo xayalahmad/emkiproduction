@@ -21,7 +21,8 @@ import { useDispatch } from 'react-redux';
 import { Link } from "react-router-dom";
 import { setMood } from '../../../stores/mood';
 import { setPage } from '../../../stores/page';
-
+import hamburger from '../../../Image/hamburger.svg'
+import Language from '../../../Language/LanguageDrawer';
 export default function DrawerBar() {
   const dispatch = useDispatch()
 
@@ -75,22 +76,22 @@ export default function DrawerBar() {
 
     const list = (anchor) => (
         <Box
-            className='flex flex-col bg-secondary h-full pt-16 text-center'
+            className='flex flex-col bg-secondary h-full pt-16 pl-4 pr-4 '
             sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
             role="presentation"
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
         >
-
-          <Link  onClick={changeMoodFalse} to="/">{" "}
+                <Language color={'red'} bgColor={'blue'} />
+          <Link className='mt-5' onClick={changeMoodFalse} to="/">{" "}
               <BasicButton key={t('Navbar.Home')} name={t('Navbar.Home')}></BasicButton>
-                 </Link>
+              </Link>
 
-                 <Link onClick={changeMoodTrue} to="/events">{" "}
+                 <Link onClick={changeMoodFalse} to="/events">{" "}
                  <BasicButton key={t('Navbar.Events')} name={t('Navbar.Events')}></BasicButton>
                  </Link>
 
-                 <Link onClick={changeMoodTrue} to="/blog">{" "}
+                 <Link onClick={changeMoodFalse} to="/blog">{" "}
               <BasicButton key={t('Navbar.Blog')} name={t('Navbar.Blog')}></BasicButton>
                  </Link>
 
@@ -117,7 +118,8 @@ export default function DrawerBar() {
                         onClick={handleOpenNavMenu}
                         color="inherit"
                     >
-                        <MenuIcon />
+                        {/* <MenuIcon /> */}
+                        <img style={{width: '29px'}} src={hamburger}/>
                     </IconButton >
                     </div>
                     <Drawer

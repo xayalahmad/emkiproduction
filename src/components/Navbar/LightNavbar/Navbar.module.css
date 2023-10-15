@@ -1,12 +1,46 @@
 
+
 @media only screen and (min-width: 1280px){
     .items{
-        margin-left: 120px;
+        margin-left: 180px;
     }
 }
-@media only screen and (min-width: 1129px) and (max-width: 1279px){
+@media only screen and (min-width: 1169px) and (max-width: 1279px){
     .items{
-        margin-left: 50px;
+        margin-left: 90px;
+    }
+}
+@media only screen and (min-width: 1129px) and (max-width: 1168px){
+    .items{
+        margin-left: 70px;
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1128px){
+    .items{
+        margin-left: 20px;
     }
 }
 
+
+.logoNavbar{
+    width: 119.39px !important;
+}
+
+.navbar{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #fff;
+    border-radius: 0 0 24px 24px;
+    width: 83.96667% !important;
+    margin: auto !important;
+}
+
+@media only screen and (max-width: 1080px){
+    .navbar{
+        border-radius: 0;
+        width: 100% !important;
+    }
+    .appBar{
+        padding: 0;
+    }
+}

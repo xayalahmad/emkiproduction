@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Ticket from '../../../Image/ticket.svg'
 import Arrow from '../../../Image/arrow-right.svg'
 import styles from './Content.module.css'
+import { Link } from "react-router-dom";
 import Wtp from "../../myButton/Wtp/Wtp";
 import ContentButton from "./ContentButton/ContentButton";
 export default function Content() {
@@ -22,11 +23,11 @@ export default function Content() {
           {t('Home.Content.text')}
         </Box>
         <Box className='flex mt-9 '>
-        <Box className='flex items-center mr-0 sm:mr-8'>
-        <Wtp/>
-        </Box>
+        <Link to="/events">{" "}
         
           <ContentButton/>
+          </Link>
+
       </Box>
       </Box>
     </>

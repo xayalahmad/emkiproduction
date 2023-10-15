@@ -3,13 +3,19 @@
 .itemDark {
     font-family: 'Euclid Circular A', sans-serif;
     font-size: 16px;
-  color: white;
+  color: #192038;
 
 }
 .itemLight {
   font-family: 'Euclid Circular A', sans-serif;
   font-size: 16px;
 color: #151A30;
+
+}
+.itemNav {
+  font-family: 'Euclid Circular A', sans-serif;
+  font-size: 16px;
+color: #f7f9fc;
 
 }
 .language{
@@ -21,6 +27,9 @@ color: #151A30;
 
 .languageLight{
   color: #151A30;
+}
+.languageNav{
+  color: #101426;
 }
 
 

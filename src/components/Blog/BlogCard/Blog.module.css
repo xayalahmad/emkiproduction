@@ -5,13 +5,19 @@
     border: 0;
     box-shadow: 0;
     transition: all 0.5s;
-    margin: 0 15px 0px 0;
-}
+    margin: 0 15px 40px 0;
+    width: 375px;
+    border-radius: 50px;
+    height: 321.54px;
+    background-color: #101426;
 
+}
 .image {
     transition: all 0.5s;
     border-radius: 24px;
     filter: blur(0px);
+    /* height: 375px; */
+
 }
 .imageContainer{
     /* width: 335.13px; */
@@ -23,17 +29,23 @@
     max-height: 574px;
     position: relative;
     z-index: 555;
+    /* background-color: #F7F9FC; */
+
 }
 
 .content {
     padding: 10px 24px 12px 24px;
-    border: 1px solid #151A30;
-    border-radius: 24px;
-    background-color: #fff;
+    border: 1px solid #192038;
+    border-radius: 0 0 24px 24px;
+    background-color: #101426;
     transition: all 0.5s;
-    /* height: 95.6px; */
+    height: 91.6px;
     position: relative;
-    top: -52px;
+    top: -72px;
+    /* background-color: #F7F9FC; */
+    display: flex;
+    align-items: end;
+
 }
 
 .ticket{
@@ -47,7 +59,6 @@ text-align: center;
 /* min-width: 198px; */
 /* max-width: 198px; */
 font-family: 'Euclid Circular A', sans-serif;
-background-color: white;
 border-radius: 8px;
 height: min-content;
 position: absolute;
@@ -82,6 +93,12 @@ filter: blur(10px);
     margin: 0 0  0;
     transition: all 0.5s;
     color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
 .date {
@@ -95,14 +112,35 @@ filter: blur(10px);
     line-height: 24px;
 }
 .desc{
-    color: #8F9BB3;
+    color: #edf1f7;
+    transition: all 0.5s;
     font-size: 16px;
     font-family: 'Euclid Circular A', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    /* white-space: nowrap; */
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    /* word-wrap: break-word; */
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: 1.5em; /* Sets line height to 1.5 times text size */
+    height: 3em; /* Sets the div height to 2x line-height (3 times text size) */
+    width: 100%; /* Use whatever width you want */
+    white-space: normal; /* Wrap lines of text */
+    overflow: hidden; /* Hide text that goes beyond the boundaries of the div */
+    text-overflow: ellipsis; /* Ellipses (cross-browser) */
+    -o-text-overflow: ellipsis; /* Ellipses (cross-browser) */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-height: 24px;        /* fallback */
+    max-height: 48px;       /* fallback */
+    /* background-color: #F7F9FC; */
 
 }
 .hall {
@@ -132,34 +170,32 @@ filter: blur(10px);
 
 
 .card:hover .content {
-    background-color: #151A30;
+    transition: all 0.5s;
+    background-color: #f7f9fc;
 }
 
+
 .card:hover .date {
-    color: #fff;
+    color: #151A30;
 }
 .card:hover .hall {
-    color: #fff;
+    color: #151A30;
 }
 .card:hover .desc{
-    color: #fff;
+    color: #151A30;
 
 }
-.card:hover .title {
-    filter: blur(10px);
-}
 
-.card:hover .ellipse {
-    filter: blur(10px);
-}
-.card:hover .date {
-    filter: blur(10px);
-}
 .card:hover .image {
-    backdrop-filter: blur(10px);
-    filter: blur(4px);
-    transition: 0.5s ease;
-    background-color: red;
+    /* backdrop-filter: blur(10px); */
+    /* filter: blur(4px); */
+    -webkit-filter: brightness(60%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+
 }
 
 
@@ -184,7 +220,17 @@ filter: blur(0px);
     
 }
 
-
+@media only screen and (max-width: 1002px){
+   
+    .card {
+        width: 350px;
+    
+    }
+    .image {
+        transition: all 0.5s;
+        width: 350px;
+    }
+}    
 
 @media only screen and (max-width: 690px){
     .ellipse,
@@ -195,16 +241,21 @@ filter: blur(0px);
 }
 
 @media only screen and (max-width: 640px){
- 
+    .card {
+        width: 320px;
+    
+    }
     .image {
-        height: 223.89px !important;
+        /* height: 223.89px !important; */
+        width: 320px;
+
     }
 }
 
 @media only screen and (max-width: 457px){
-    .card {
+    /* .card {
         margin: 0;
-    }
+    } */
     .title{
         font-size: 22px;
     }

@@ -10,10 +10,7 @@ export default function ContentButton() {
             <Box className={`${styles.buyTicket} flex items-center`}>
                 {t('Button.events')}
             </Box>
-            <Box  className={styles.icon}>
-
                 <ArrowForwardIcon className={styles.iconColor}/>
-            </Box>
         </Box>
         </>
     )

@@ -7,7 +7,7 @@
     transition: all 0.5s;
     margin: 0 15px 40px 0;
     width: 375px;
-    background-color: #101426;
+    background-color: #F7F9FC;
 
 }
 
@@ -17,7 +17,6 @@
     filter: blur(0px);
     width: 375px;
     height: 375px;
-
 }
 .imageContainer{
     /* width: 335.13px; */
@@ -29,15 +28,15 @@
     max-height: 370px;
     position: relative;
     z-index: 555;
-    /* background-color: #F7F9FC; */
+    background-color: #F7F9FC;
 
 }
 
 .content {
     padding: 16px 24px;
-    border: 1px solid #192038;
+    border: 1px solid #151A30;
     border-radius: 24px;
-    background-color: #101426;
+    background-color: #fff;
     transition: all 0.5s;
     height: 103.6px;
 }
@@ -63,39 +62,38 @@ z-index: 5;
 visibility: hidden;
 transition: all 0.1s;
 filter: blur(10px);
-white-space: nowrap;
 
 }
 
 .title {
-    color: #fff;
+    color: #151A30;
     font-size: 24px;
     font-family: 'Euclid Circular A', sans-serif;
     font-weight: 700;
     line-height: 32px;
     margin: 0 0 12px 0;
     transition: all 0.5s;
-    white-space: nowrap;
+
 }
 
 .date {
     font-family: 'Euclid Circular A', sans-serif;
-    color: #fff;
+    color: #192038;
     font-size: 16px;
     font-family: Euclid Circular A;
     font-weight: 400;
     transition: all 0.5s;
-    white-space: nowrap;
+
     line-height: 24px;
 }
 .hall {
     font-family: 'Euclid Circular A', sans-serif;
-    color: #fff;
+    color: #192038;
     font-size: 16px;
     font-family: Euclid Circular A;
     font-weight: 400;
     transition: all 0.5s;
-    white-space: nowrap;
+
     line-height: 24px;
 }
 
@@ -105,7 +103,6 @@ white-space: nowrap;
     font-family: 'Euclid Circular A', sans-serif;
     font-weight: 500;
     line-height: 28px;
-    white-space: nowrap;
 }
 .ellipse{
     margin: 0 8px;
@@ -115,30 +112,24 @@ white-space: nowrap;
 
 
 .card:hover .content {
-    transition: all 0.5s;
-    background-color: #f7f9fc;
+    background-color: #151A30;
 }
 
 .card:hover .date {
-    color: #151A30;
+    color: #fff;
 }
 .card:hover .hall {
-    color: #151A30;
+    color: #fff;
 }
 
 .card:hover .title {
-    color: #151A30;
+    color: #fff;
 }
 
 .card:hover .image {
-    /* backdrop-filter: blur(10px); */
-    /* filter: blur(4px); */
-    -webkit-filter: brightness(60%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
+    backdrop-filter: blur(10px);
+    filter: blur(4px);
+    transition: 0.5s ease;
 }
 
 .card:hover .ticket {
@@ -190,27 +181,11 @@ filter: blur(0px);
         height: 240px;
     }
     } */
-    @media only screen and (max-width: 640px){
- 
-        .card {
-            width: 320px;
-        
-        }
-        
-        .image {
-            transition: all 0.5s;
-            border-radius: 24px;
-            filter: blur(0px);
-            width: 320px;
-            height: 320px;
-        }
-    }
-    
+
 @media only screen and (max-width: 502px){
     .ellipse,
     .hall{
         display: none;
     }
-
     
 }

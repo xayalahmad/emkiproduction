@@ -48,8 +48,8 @@ useEffect(() => {
     .catch(err => console.log(err))
   // }
   // getUsers()
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  // document.body.scrollTop = 0;
+  // document.documentElement.scrollTop = 0;
 }, [selectedBlog])
 
     return(

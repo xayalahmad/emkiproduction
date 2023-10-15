@@ -35,29 +35,16 @@ export default function Events({filter}){
     console.log(filteredArr);
     return(
       <>
-   {filter ?
-   
-   <Box className=
-   'mx-auto w-11/12 sm:w-4/5 mb-6 xl:mb-0 pt-16 sm:pt-16 md:pt-16 xl:pt-16 pb-8 sm:pb-8 md:pb-8 xl:pb-8 '
- >
-         <Pb  button='Events'/>
-         <Box className={styles.cardsContainer}>
-         {filteredArr?.map((q, i) => 
- <EventsCard key={i} event={q}/> )}
-         </Box>
-         </Box>
-   :
+
   
-   <Box className=
-   'mx-auto w-11/12 sm:w-4/5 mb-6 xl:mb-0 pt-32 sm:pt-40 md:pt-40 xl:pt-40 pb-32 sm:pb-40 md:pb-40 xl:pb-40 '
+   <Box className={styles.sidebarEventsContainer}
  >
-         <Pb  button='Events'/>
          <Box className={styles.cardsContainer}>
          {eventsAll?.map((q, i) => 
  <EventsCard key={i} event={q}/> )}
          </Box>
          </Box>
-  }   
+  
 
         </>
     )

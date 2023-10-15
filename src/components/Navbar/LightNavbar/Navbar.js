@@ -15,7 +15,7 @@ import Logo from '../../../Image/emkiLogoDark.svg'
 import BasicButton from '../BasicButton/BasicButton'
 import { useTranslation } from 'react-i18next';
 import Ticket from '../../../Image/ticket.svg'
-import Language from '../../../Language/LanguageLight';
+import Language from '../../../Language/LanguageNavbar';
 import styles from './Navbar.module.css'
 import { Link } from "react-router-dom";
 import Drawer from './Drawer';
@@ -50,17 +50,19 @@ function LightNavbar() {
     dispatch(setMood(false))
     dispatch(setPage(false))
     localStorage.setItem('navColor', false);
-    
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
   const changeMoodTrue = () => {
     dispatch(setMood(true))
     dispatch(setPage(true))
     localStorage.setItem('navColor', true);
-
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
   return (
-    <AppBar position='fixed' elevation={0} style={{backgroundColor: 'transparent', border: '0px'}} className='sm:px-12 px-6' >
-      <Container fixed={true} style={{backgroundColor: '#fff', borderRadius: '0 0 24px 24px', padding: '24px 32px', boxShadow: 'rgba(17, 17, 26, 0.1) 0px 0px 16px'}}  className='mx-2 bg-main ' maxWidth="xl">
+    <AppBar position='fixed' elevation={0} style={{backgroundColor: 'transparent', border: '0px'}} className={`${styles.appBar} `} >
+      <Box fixed={true} style={{ padding: '24px 32px', boxShadow: 'rgba(17, 17, 26, 0.1) 0px 0px 16px'}}  className={styles.navbar} >
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             {/* <IconButton
@@ -103,7 +105,7 @@ function LightNavbar() {
           </Box>
           <Box className='flex items-center justify-between w-full'>
           <Link onClick={changeMoodFalse} to="/">{" "}
-          <img src={Logo} />
+          <img className={styles.logoNavbar} src={Logo} />
           </Link>
           <Box
            className={styles.items} 
@@ -154,7 +156,7 @@ function LightNavbar() {
             </Menu>
           </Box>
         </Toolbar>
-      </Container>
+      </Box>
     </AppBar>
   );
 }

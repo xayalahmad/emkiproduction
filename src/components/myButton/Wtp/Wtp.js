@@ -8,10 +8,10 @@ export default function Wtp() {
 
     return (
         <>   <Box className={`${styles.buttonContainer}`}>
-            <Box className={`${styles.buyTicket} flex items-center`}>
+            <Box sx={{ display: { xs: 'none', md: 'flex' } }} className={`${styles.buyTicket} flex items-center`}>
                 {t('Button.buyTicket')}
             </Box>
-            <Box style={{ padding: '14px 8px', minWidth: '36px', maxHeight: '48px' }} className={`${styles.buyTicketIcon} rounded-lg bg-white`} >
+            <Box  style={{ padding: '14px 8px', minWidth: '36px', maxHeight: '48px' }} className={`${styles.buyTicketIcon} rounded-lg bg-white`} >
                 <img className={styles.icon} src={Ticket} />
             </Box>
         </Box>

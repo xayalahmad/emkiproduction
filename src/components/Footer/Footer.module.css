@@ -1,0 +1,81 @@
+@import url('https://fonts.cdnfonts.com/css/euclid-circular-a');
+.copyBg{
+    border-top: 1px solid #192038;
+    margin-top: 50px;
+}
+.copy{
+    /* margin-top: 50px; */
+    padding: 10px 0 8px 0;
+    color: #EDF1F7;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-family: 'Euclid Circular A', sans-serif;
+}
+.imgItmesCon{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.allItemsCon{
+    display: flex;
+    width: 72%;
+    justify-content: space-between;
+}
+.item{
+    display: flex;
+    margin-bottom: 8px;
+}
+.footerIcon{
+    margin-right: 8px;
+    width: 16px;
+}
+.title{
+    color: #F5F5F6;
+font-size: 16px;
+  font-family: 'Euclid Circular A', sans-serif;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.text{
+    color: #E4E9F2;
+font-size: 16px;
+font-family: Euclid Circular A;
+font-weight: 400;
+
+}
+
+@media only screen and (max-width: 769px){
+    .imgItmesCon{
+        flex-direction: column;
+        align-items: center;
+    }
+    .allItemsCon{
+        margin-top: 48px;
+    }
+}
+@media only screen and (max-width: 639px){
+    .imgItmesCon{
+        flex-direction: column;
+        align-items: center;
+    }
+    .allItemsCon{
+        margin-top: 48px;
+        width: 100%;
+    }
+    .text{
+        font-size: 14px;
+    }
+    .title{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .footerIcon{
+        margin-right: 8px;
+        width: 12px;
+    }
+    .copyBg{
+        margin-top: 20px;
+    }
+    
+}

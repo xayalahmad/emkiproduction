@@ -1,0 +1,35 @@
+
+.cardsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 1463px){
+    .cardsContainer{
+        overflow-x: auto;
+    flex-wrap: nowrap;
+    
+
+    }
+    
+}
+
+.sidebarEventsContainer{
+        width: 100%;
+        /* width: 522px; */
+    padding: 64px 32px;
+}
+
+@media only screen and (max-width: 863px){
+    .sidebarEventsContainer{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 574px){
+    .sidebarEventsContainer{
+        padding: 48px 16px;
+
+    }
+}
