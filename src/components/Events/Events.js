@@ -13,7 +13,7 @@ export default function Events({filter}){
   const { language } = useSelector(state => state.language)
   const [eventsAll, setEventsAll ] = useState([])
   console.log(eventsAll);
-  let filteredArr = eventsAll.slice(eventsAll.length-3, eventsAll.length)
+  let filteredArr = eventsAll.slice(0, 3)
     useEffect(() => {
         console.log(language);
         // const getUsers = async () => {

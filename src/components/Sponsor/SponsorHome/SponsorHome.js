@@ -36,7 +36,7 @@ console.log(sponsorAll);
    <Box
    className={styles.aboutBgHome}
 >
-<Box className='mx-auto w-11/12'>
+<Box className='mx-auto '>
 
         <Box className={styles.homeBg}>
       <Box className='pt-16 sm:pt-0  md:pt-0 xl:pt-0'>
