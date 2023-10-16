@@ -14,7 +14,7 @@ export default function Content() {
 
   return (
     <>
-      <Box className='mx-auto w-11/12 sm:w-4/5 mb-6 xl:mb-0 pt-32 sm:pt-40  md:pt-40 xl:pt-16'>
+      <Box className='mx-auto w-11/12 sm:w-4/5 mb-6 xl:mb-0 pt-28 sm:pt-40  md:pt-40 xl:pt-16'>
 
         <Box className={`${styles.font} ${styles.title}`}>
           {t('Home.Content.title')}
