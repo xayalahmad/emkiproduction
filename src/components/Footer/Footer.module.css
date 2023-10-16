@@ -44,6 +44,12 @@ font-family: Euclid Circular A;
 font-weight: 400;
 
 }
+@media only screen and (max-width: 387px){
+    .itemCon2{
+       margin-top: 24px;
+    }
+  
+}
 
 @media only screen and (max-width: 769px){
     .imgItmesCon{
@@ -52,6 +58,7 @@ font-weight: 400;
     }
     .allItemsCon{
         margin-top: 48px;
+        flex-wrap: wrap;
     }
 }
 @media only screen and (max-width: 639px){

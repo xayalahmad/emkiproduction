@@ -119,7 +119,7 @@ export default function DrawerBar() {
                         color="inherit"
                     >
                         {/* <MenuIcon /> */}
-                        <img style={{width: '29px'}} src={hamburger}/>
+                        <img style={{width: '37px'}} src={hamburger}/>
                     </IconButton >
                     </div>
                     <Drawer

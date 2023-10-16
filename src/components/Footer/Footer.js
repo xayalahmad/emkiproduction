@@ -41,7 +41,7 @@ export default function Footer() {
                             </Box>
 
 
-                            <Box className={styles.itemCon}>
+                            <Box className={`${styles.itemCon}  ml-6 mr-6`}>
                                 <Box className={styles.title}>{t('Footer.Social')}</Box>
     <Link target={'_blank'} to={'https://www.facebook.com/emkiproduction/'}>
 
@@ -62,7 +62,7 @@ export default function Footer() {
                             </Box>
 
 
-                            <Box className={styles.itemCon}>
+                            <Box className={`${styles.itemCon} ${styles.itemCon2}`}>
                                 <Box className={styles.title}>{t('Footer.Information')}</Box>
                                 <Link onClick={cliclFooterItem} to='/about'>
 

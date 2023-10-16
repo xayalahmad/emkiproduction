@@ -2,9 +2,9 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/splide/dist/css/splide.min.css";
 import './style.css'
-import col1i1 from '../../../Image/Slider/col1i1.jpg'
-import col1i2 from '../../../Image/Slider/col1i2.jpg'
-import col1i3 from '../../../Image/Slider/col1i3.jpg'
+import col1i1 from '../../../Image/Slider/col1i1.png'
+import col1i2 from '../../../Image/Slider/col1i2.png'
+import col1i3 from '../../../Image/Slider/col1i3.png'
 export default function SplideSlider() {
   return (
     <Splide
