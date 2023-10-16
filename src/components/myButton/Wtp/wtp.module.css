@@ -24,6 +24,8 @@
 .buyTicketIcon{
     transition: all 0.5s;
 width: 36px;
+display: flex;
+align-items: center;
 }
 /* .buyTicket:hover {
     transition: all 0.5s;   
@@ -53,3 +55,9 @@ width: 36px;
 
 
 
+@media only screen and (max-width: 1080px){
+    .buyTicketIcon{
+        height: 40px;
+    width: 36px;
+    }
+}

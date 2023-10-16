@@ -65,7 +65,7 @@ function DarkNavbar() {
   }
   return (
     <AppBar position='fixed' elevation={0} style={{ backgroundColor: 'transparent', border: '0px' }} className={`${styles.appBar} `} >
-      <Box fixed={true} style={{ padding: '30px 40px' }} className={styles.navbar} >
+      <Box fixed={true}  className={styles.navbar} >
         {/* <Box disableGutters> */}
           <Box className='flex items-center justify-between w-full'>
             <Box sx={{ display: { xs: 'flex', md: 'none' } }}>

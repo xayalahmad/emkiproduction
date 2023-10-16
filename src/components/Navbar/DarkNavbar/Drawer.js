@@ -110,7 +110,7 @@ export default function DrawerBar() {
             {['left'].map((anchor) => (
                 <>
                     <div className='p-0' onClick={toggleDrawer(anchor, true)}>    
-                    <IconButton style={{padding: '0', marginRight: '20px'}} className='p-0'
+                    <IconButton style={{padding: '0'}} className='p-0'
                         size="large"
                         aria-label="account of current user"
                         aria-controls="menu-appbar"

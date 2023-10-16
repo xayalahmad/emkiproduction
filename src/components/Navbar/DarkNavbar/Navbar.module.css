@@ -31,6 +31,7 @@
     width: 86.36667% !important;
     margin: auto !important;
     border-top: 0;
+    padding: 30px 40px;
 }
 
 @media only screen and (max-width: 1080px){
@@ -39,9 +40,16 @@
         width: 100% !important;
         border: 0;
     box-shadow: none;
+    height: 72px !important;
+    padding: 16px 16px;
 
+    }
+    .logoNavbar{
+        width: 80px !important;
     }
     .appBar{
         padding: 0;
+    height: 72px !important;
+
     }
 }
