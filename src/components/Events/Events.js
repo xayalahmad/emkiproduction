@@ -40,7 +40,7 @@ export default function Events({filter}){
    <Box className=
    'mx-auto w-11/12 sm:w-4/5 mb-6 xl:mb-0 pt-16 sm:pt-16 md:pt-16 xl:pt-16 pb-8 sm:pb-8 md:pb-8 xl:pb-8 '
  >
-         <Pb  button='Events'/>
+         <Pb  button='DiscoverEvents'/>
          <Box className={styles.cardsContainer}>
          {filteredArr?.map((q, i) => 
  <EventsCard key={i} event={q}/> )}

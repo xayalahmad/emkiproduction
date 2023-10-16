@@ -29,19 +29,19 @@ export default function OurValues() {
                     </Box>
                     <Box className='block xl:flex justify-between '>
 
-                        <Box className={`${styles.container} w-full  xl:w-6/12  mr-10  xl:mb-20 mb-8`}>
+                        <Box className={`${styles.container} w-full  xl:w-6/12  mr-7  xl:mb-20 mb-8`}>
                             <img className={styles.ourValuesImage} src={rec1} />
-                            <Box className={`${styles.content} md:ml-5 ml-4 w-full` }>
-                                <Box className={styles.title}>Trust</Box>
-                                <Box className={styles.text}>We always give frank feedback and actionable advice to help you see the big picture.</Box>
+                            <Box className={`${styles.content} md:ml-3 ml-4 w-full` }>
+                                <Box className={styles.title}>{t('OurValues.Desc1')}</Box>
+                                <Box className={styles.text}>{t('OurValues.Title1')}</Box>
                             </Box>
                         </Box>
 
                         <Box className={`${styles.container} w-full xl:w-6/12 xl:mb-20 mb-8 `}>
                             <img className={styles.ourValuesImage} src={rec2} />
-                            <Box className={`${styles.content} md:ml-5 ml-4 w-full`}>
-                                <Box className={styles.title}>Transparency</Box>
-                                <Box className={styles.text}>We cut through the noise to provide a clear sense of direction.</Box>
+                            <Box className={`${styles.content} md:ml-3 ml-4 w-full`}>
+                                <Box className={styles.title}>{t('OurValues.Desc2')}</Box>
+                                <Box className={styles.text}>{t('OurValues.Title2')}</Box>
                             </Box>
                         </Box>
 
@@ -49,19 +49,19 @@ export default function OurValues() {
 
                     <Box className='block xl:flex justify-between'>
 
-<Box className={`${styles.container} w-full xl:w-6/12 mr-10 xl:mb-0 mb-8`}>
+<Box className={`${styles.container} w-full xl:w-6/12 mr-7 xl:mb-0 mb-8`}>
     <img className={styles.ourValuesImage} src={rec3} />
-    <Box className={`${styles.content} md:ml-5 ml-4 w-full`}>
-        <Box className={styles.title}>Innovation</Box>
-        <Box className={styles.text}>Our events have been meticulously built and match the ambition of modern businesses.</Box>
+    <Box className={`${styles.content} md:ml-3 ml-4 w-full`}>
+        <Box className={styles.title}>{t('OurValues.Desc3')}</Box>
+        <Box className={styles.text}>{t('OurValues.Title3')}</Box>
     </Box>
 </Box>
 
 <Box className={`${styles.container} w-full xl:w-6/12`}>
     <img className={styles.ourValuesImage} src={rec4} />
-    <Box className={`${styles.content} md:ml-5 ml-4 w-full`}>
-        <Box className={styles.title}>Collaboration</Box>
-        <Box className={styles.text}>We approach every engagement with confidence in our ability to forge a long-term relationships.</Box>
+    <Box className={`${styles.content} md:ml-3 ml-4 w-full`}>
+        <Box className={styles.title}>{t('OurValues.Desc4')}</Box>
+        <Box className={styles.text}>{t('OurValues.Title4')}</Box>
     </Box>
 </Box>
 
