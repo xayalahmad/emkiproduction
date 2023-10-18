@@ -10,7 +10,7 @@ export default function SponsorCompany(){
     useEffect(() => {
         console.log(language);
         // const getUsers = async () => {
-          fetch('http://logicbackend-001-site1.htempurl.com/api/Sponsor', {
+          fetch('https://emkiproduction.azurewebsites.net/api/Sponsor', {
             headers: {
                 'languageId': language ? language : 1
             }

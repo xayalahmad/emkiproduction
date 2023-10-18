@@ -14,7 +14,7 @@ export default function Slider(){
     useEffect(() => {
         console.log(language);
         // const getUsers = async () => {
-          fetch('http://logicbackend-001-site1.htempurl.com/api/Artist', {
+          fetch('https://emkiproduction.azurewebsites.net/api/Artist', {
             headers: {
                 'languageId': language ? language : 1
             }

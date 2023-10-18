@@ -14,7 +14,7 @@ export default function SponsorHome({filter}) {
     useEffect(() => {
         console.log(language);
         // const getUsers = async () => {
-          fetch(`http://logicbackend-001-site1.htempurl.com/api/About/translation?languageId=${language}`, {
+          fetch(`https://emkiproduction.azurewebsites.net/api/About/translation?languageId=${language}`, {
           })
           .then(res => res.json())
           .then(data => {

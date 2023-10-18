@@ -37,7 +37,7 @@ export default function Language({color, bgColor}) {
 
   useEffect(() => {
     const getUsers = async () => {
-      await fetch('http://logicbackend-001-site1.htempurl.com/api/Language')
+      await fetch('https://emkiproduction.azurewebsites.net/api/Language')
       .then(res => res.json())
       .then(data => setGetLang(data))
       .catch(err => console.log(err))

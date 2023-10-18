@@ -17,7 +17,7 @@ const [blogAll, setBlogAll ] = useState([])
 useEffect(() => {
     console.log(language);
     // const getUsers = async () => {
-      fetch(`http://logicbackend-001-site1.htempurl.com/api/PostTranslation?postId=${selectedBlog.id}&languageId=${language}`, {
+      fetch(`https://emkiproduction.azurewebsites.net/api/PostTranslation?postId=${selectedBlog.id}&languageId=${language}`, {
         headers: {
             'languageId': language ? language : 1
         }
@@ -35,7 +35,7 @@ useEffect(() => {
 useEffect(() => {
   console.log(language);
   // const getUsers = async () => {
-    fetch(`http://logicbackend-001-site1.htempurl.com/api/PostTranslation?postId=${selectedBlog.id}&languageId=${language}`, {
+    fetch(`https://emkiproduction.azurewebsites.net/api/PostTranslation?postId=${selectedBlog.id}&languageId=${language}`, {
       headers: {
           'languageId': language ? language : 1
       }

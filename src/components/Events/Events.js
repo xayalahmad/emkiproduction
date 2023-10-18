@@ -16,8 +16,9 @@ export default function Events({filter}){
   let filteredArr = eventsAll.slice(0, 3)
     useEffect(() => {
         console.log(language);
+        // https://emkiproductions-apim.azure-api.net/
         // const getUsers = async () => {
-          fetch('http://logicbackend-001-site1.htempurl.com/api/Announcement/translation', {
+          fetch('https://emkiproduction.azurewebsites.net/api/Announcement/translation', {
             headers: {
                 'languageId': languageLocalId ? languageLocalId : 5
             }
