@@ -20,9 +20,7 @@ export default function Card({sponsorAll}) {
 <Box  className={styles.card}>
         <img  className={styles.cardImg} src={q.imageSrc} alt="Image 1" />
       </Box>
-      <Box  className={styles.card}>
-        <img  className={styles.cardImg} src={q.imageSrc} alt="Image 1" />
-      </Box>
+
 
 </>
 

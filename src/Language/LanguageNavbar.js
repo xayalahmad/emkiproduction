@@ -46,9 +46,16 @@ export default function Language({color, bgColor}) {
 }, [])
   return (
     <>
-      <FormControl sx={{ minWidth: 70 }}>
+    <Box className={styles.container}>
+
+  
+      <FormControl  sx={{ minWidth: 70 }}>
       {langCode ?
-         ''
+          
+          // <Box className={`${styles.itemNav} ${styles.language}  ${styles.languageDark} z-10`}>
+          //   {languageLocal}
+          // </Box
+          ''
           :
           <Box className={`${styles.itemNav} ${styles.language}  ${styles.languageDark}`}>
           {languageLocal}
@@ -56,6 +63,7 @@ export default function Language({color, bgColor}) {
         }
         <Select
          sx={{
+          padding: 0,
             color: {color},
             '.MuiOutlinedInput-notchedOutline': {
               borderColor: { bgColor },
@@ -70,7 +78,7 @@ export default function Language({color, bgColor}) {
               border: 'none'
             },
             '.MuiSvgIcon-root': {
-                fill: '#f7f9fc',
+                fill: '#151a30',
             },
     
           }}
@@ -91,6 +99,7 @@ export default function Language({color, bgColor}) {
             )}
         </Select>
       </FormControl>
+      </Box>
     </>
   );
 }

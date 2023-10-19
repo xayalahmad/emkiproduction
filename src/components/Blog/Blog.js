@@ -55,7 +55,7 @@ export default function Blog({ filter }) {
    <Box className=
    'mx-auto w-11/12 sm:w-4/5 mb-6 xl:mb-0 pt-32 sm:pt-40 md:pt-40 xl:pt-40 pb-32 sm:pb-40 md:pb-40 xl:pb-40 '
  >
-         <Pb  button='Events'/>
+         <Pb  button='Blog'/>
          <Box className={styles.cardsContainer}>
          {blogAll?.map((q, i) => 
  <BlogCard key={i} blog={q}/> )}

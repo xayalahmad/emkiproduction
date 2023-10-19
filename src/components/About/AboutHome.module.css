@@ -4,6 +4,9 @@
     height: 100vh;
 
     width: 100%;
+    background: linear-gradient(257deg, #151A30 0%, #211D4D 28%, #271630 70%, #0F1836 100%), linear-gradient(0deg, rgba(21, 26, 48, 0.40) 0%, rgba(21, 26, 48, 0.40) 100%);
+    padding-top: 40px;
+
 }
 .imgNameContainer{
     position: relative;
@@ -32,10 +35,11 @@
 
 }
 .artistImg{
-    max-width: 406px;
+    max-width: 609px;
     height: min-content;
     min-height: min-content;
-    border-radius: 8px;
+    border-radius: 16px 16px 0 0;
+    margin-left: 40px;
 }
 
 .title1{
@@ -71,6 +75,37 @@ margin-bottom: 24px;
     justify-content: space-between;
     align-items: center;
 }
+@media only screen and (max-width: 1500px){
+    .artistImg{
+       /* display: none; */
+       /* margin-left: 0px; */
+       /* margin-bottom: 40px; */
+       width: 509px;
+       /* margin-top: 40px; */
+
+    }
+    .title1{
+        font-family: 'Euclid Circular A', sans-serif;
+        color: #C5CEE0;
+        font-size: 38px;
+        font-weight: 500;
+        margin-bottom: 16px;
+        line-height: 40px;
+    }
+    .title2{
+        font-family: 'Euclid Circular A', sans-serif;
+        -webkit-text-stroke: 0.8px #fff;
+        color: transparent;
+        font-size: 38px;
+        font-weight: 500;
+        line-height: 40px;
+        margin-bottom: 24px;
+    }
+    .desc{
+
+        margin-bottom: 0;
+    }
+}
 @media only screen and (max-width: 1349px){
     .container{
         flex-direction: column;
@@ -80,9 +115,11 @@ margin-bottom: 24px;
     }
     .artistImg{
        /* display: none; */
-       /* margin-left: 50px; */
+       margin-left: 0px;
        /* margin-bottom: 40px; */
+       width: 609px;
        margin-top: 40px;
+
     }
     .aboutBg{
         /* padding-bottom: 32px; */
@@ -99,7 +136,13 @@ margin-bottom: 24px;
     }
     
 }
+@media only screen and (max-width: 850px){
+    .artistImg{
+       /* width: 400px; */
+       width: 100%;
 
+    }
+}
 @media only screen and (max-width: 750px){
 .title1{
     font-size: 40px;
@@ -108,7 +151,7 @@ margin-bottom: 24px;
     font-size: 40px;
 }
     .artistImg{
-        width: 342px;
+        width: 100%;
        /* display: none; */
     }
     .imgName2{
@@ -131,7 +174,7 @@ margin-bottom: 24px;
         line-height: 40px;
     }
         .artistImg{
-            width: 342px;
+            /* width: 342px; */
            /* display: none; */
         }
     
@@ -139,9 +182,23 @@ margin-bottom: 24px;
     }
 
     @media only screen and (max-width: 440px){
-       
+        .title1{
+            font-size: 26px;
+            margin-bottom: 6px;
+            line-height: 30px;
+        }
+        .title2{
+            line-height: 30px;
+            font-size: 26px;
+            margin-bottom: 10px;
+
+        }
+        .desc{
+            font-size: 18px;
+
+        }
             .artistImg{
-                width: 302px;
+                /* width: 302px; */
                /* display: none; */
             }
             .imgNameContainer{

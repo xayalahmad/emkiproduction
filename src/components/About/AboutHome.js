@@ -1,8 +1,9 @@
 import { Box } from "@mui/material";
-import aboutImg from '../../Image/About/aboutBg.png'
+// import aboutImg from '../../Image/About/aboutBg.png'
 import styles from './AboutHome.module.css'
 import { useTranslation } from 'react-i18next';
-import ArtistImg from '../../Image/About/Artist.png'
+import video from '../../Image/About/aboutVideo.mp4'
+// import ArtistImg from '../../Image/About/Artist.png'
 import Pb from "../myButton/Pb/Pb";
 export default function AboutHome() {
 
@@ -20,7 +21,6 @@ export default function AboutHome() {
                 className={styles.aboutBg}
             >
                 <Box className='mx-auto w-11/12 sm:w-4/5 mb-6 xl:mb-0 pt-32 sm:pt-40  md:pt-40 xl:pt-40'>
-                    <Pb   button='About'/>
                     <Box className={styles.container}>
                         <Box className={styles.content}>
                             <Box className={styles.title1}>
@@ -34,9 +34,7 @@ export default function AboutHome() {
                             </Box>
                   
                         </Box>
-
-
-                            <img className={styles.artistImg} src={ArtistImg}/>
+                            <video controls loop autoPlay className={styles.artistImg} src={video}/>
                     </Box>
 
 

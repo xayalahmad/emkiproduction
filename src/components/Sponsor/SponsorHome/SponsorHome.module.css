@@ -4,7 +4,9 @@
     height: 100vh;
 
     width: 100%;
-    padding-top: 30px;
+    padding-top: 40px;
+    /* background-color: aqua; */
+    background: linear-gradient(257deg, #151A30 0%, #211D4D 28%, #271630 70%, #0F1836 100%), linear-gradient(0deg, rgba(21, 26, 48, 0.40) 0%, rgba(21, 26, 48, 0.40) 100%);
 
 }
 .aboutBgHome{
@@ -25,6 +27,12 @@
 .rightCon{
     max-height: 499px;
 
+}
+.artistImgHome{
+    border-radius: 0px;
+    height: min-content;
+    max-width: 547px;
+    margin-left: 30px;
 }
 .artistImg{
     max-width: 490px;
@@ -83,6 +91,15 @@ line-height: 28px;
        /* margin-left: 50px; */
        margin-top: 40px;
     }
+    .artistImgHome{
+        /* display: none; */
+        /* margin-left: 50px; */
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 100%;
+        margin-left: 0;
+     }
+    
     .aboutBg{
         /* padding-bottom: 32px; */
     }
