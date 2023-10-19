@@ -38,7 +38,7 @@
     max-width: 609px;
     height: min-content;
     min-height: min-content;
-    border- : 16px;
+    border-radius : 16px;
     margin-left: 40px;
 }
 
@@ -119,6 +119,7 @@ margin-bottom: 24px;
        /* margin-bottom: 40px; */
        width: 609px;
        margin-top: 40px;
+       margin-bottom: 40px;
 
     }
     .aboutBg{

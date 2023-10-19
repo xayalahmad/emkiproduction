@@ -30,9 +30,9 @@ export default function SliderXl({artistsAll}) {
     >
          {artistsAll.length > 0 ? artistsAll.map((q, i) => 
 
-<SplideSlide  style={{maxWidth: '500px'}} className={`${styles.sliderContainer} h-72`}>
+<SplideSlide  style={{maxWidth: '500px'}} className={`${styles.sliderContainer} h-60`}>
   <div className={styles.sliderText}>{q.name}</div>
-  <img className={`${styles.sliderImg} h-72`} src={q.imageSrc} alt="Image 1" />
+  <img className={`${styles.sliderImg} h-60`} src={q.imageSrc} alt="Image 1" />
 </SplideSlide>
 
 )  : ''}

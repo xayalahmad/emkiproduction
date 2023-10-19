@@ -9,7 +9,7 @@ import styles from './Card.module.css'
 
 export default function Card({sponsorAll}) {
   return (
-    <>
+    <Box className={styles.cardBodySponsorpage}>
         <Pb  button='Sponsors'/>
       
       <Box className={styles.cardContainer}>
@@ -28,7 +28,7 @@ export default function Card({sponsorAll}) {
 
 
 </Box>
-</>
+</Box>
 
   );
 }

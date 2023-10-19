@@ -1,3 +1,24 @@
 body{
     background-color: #101426;
 }
+::-webkit-scrollbar {
+    width: 10px;
+    cursor: pointer;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #151A30;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #060810;
+  }
