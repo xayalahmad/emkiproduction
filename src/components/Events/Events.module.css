@@ -1,4 +1,9 @@
 
+.cardsContainerHome{
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    display: flex;
+}
 .cardsContainer{
     display: flex;
     justify-content: space-between;

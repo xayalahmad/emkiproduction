@@ -4,6 +4,7 @@ import SliderMd from "./SliderMd";
 import SliderSm from "./SliderSm";
 import { useSelector } from 'react-redux';
 import { useState, useEffect } from "react";
+import Pb from "../../myButton/Pb/Pb";
 
 
 export default function Slider(){
@@ -32,7 +33,13 @@ console.log(artistsAll);
 
     return(
         <>
-        <Box className='xl:flex hidden'>
+   <Box className=
+   'mx-auto w-11/12 sm:w-4/5 mb-6 xl:mb-0 pt-10'
+ >
+         <Pb  button='About'/>
+        </Box>
+
+        <Box className='xl:flex hidden p-0'>
         <SliderXl artistsAll={artistsAll}/>
         </Box>
 

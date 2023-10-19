@@ -23,7 +23,7 @@ const BlogAdd = () => {
   dispatch(setSelectedBlog(blog))
 }
   return (
-        <Link onClick={BlogAdd} style={{height: '322px'}}  to='/blogdetail'>
+        <Link onClick={BlogAdd} style={{height: '322px', marginBottom: '20px'}}  to='/blogdetail'>
     <Box 
     className={styles.card}
     sx={{ maxWidth: 375, boxShadow: 0 }}>
@@ -37,12 +37,11 @@ const BlogAdd = () => {
 </Box>
 
         <CardMedia
-        sx={{ maxWidth: 375,  height: '249.94px', maxHeight:  251 , boxShadow: 0, backgroundColor: 'red' }}
+        sx={{ maxWidth: 375,  height: '249.94px', maxHeight:  251 , boxShadow: 0 }}
           className={styles.image}
           component="img"
           // height="140"
-          style={{backgroundColor: 'red'}}
-          image={blog?.translations[0]?.imageSrc}
+            image={blog?.translations[0]?.imageSrc}
           alt={blog?.translations[0]?.title}
           />
           </Box>

@@ -6,10 +6,8 @@ import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import styles from './Events.module.css'
 
-
 export default function Events({filter}){
   const languageLocalId = localStorage.getItem('langId');
-
   const { language } = useSelector(state => state.language)
   const [eventsAll, setEventsAll ] = useState([])
   console.log(eventsAll);
@@ -39,13 +37,14 @@ export default function Events({filter}){
    {filter ?
    
    <Box className=
-   'mx-auto w-11/12 sm:w-4/5 mb-6 xl:mb-0 pt-16 sm:pt-16 md:pt-16 xl:pt-16 pb-8 sm:pb-8 md:pb-8 xl:pb-8 '
+   'mx-auto w-11/12 sm:w-4/5 mb-6 xl:mb-0 pt-16 sm:pt-16 md:pt-16 xl:pt-16 pb-0 sm:pb-0 md:pb-0 xl:pb-0 '
  >
          <Pb  button='DiscoverEvents'/>
-         <Box className={styles.cardsContainer}>
-         {filteredArr?.map((q, i) => 
+         <Box className={styles.cardsContainerHome}>
+         {eventsAll?.map((q, i) => 
  <EventsCard key={i} event={q}/> )}
          </Box>
+
          </Box>
    :
   

@@ -18,7 +18,7 @@ export default function Footer() {
     }
     return (
         <>
-            <Box sx={{ borderTop: '1px solid #222b45' }}>
+            <Box sx={{ borderTop: '1px solid #222b45', marginTop: '48px' }}>
                 <Box
                     className=
                     'mx-auto w-11/12 sm:w-4/5 xl:mb-0 pt-12 sm:pt-16 md:pt-16 xl:pt-16 pb-2 sm:pb-2 md:pb-2 xl:pb-2 '

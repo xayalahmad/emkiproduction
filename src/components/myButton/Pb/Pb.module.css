@@ -6,25 +6,23 @@
     /* background-color: #151A30; */
     color: #fff;
     /* border: 1px solid #e32682; */
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 500;
     /* border-radius: 30px; */
     /* padding: 8px 32px; */
     display: inline-block;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
 }
 
-@media only screen and (max-width: 1080px){
+
+
+/* @media only screen and (max-width: 1080px){
     .button{
         display: flex;
     font-family: 'Euclid Circular A', sans-serif;
-    /* background-color: #151A30; */
     color: #fff;
-    /* border: 1px solid #e32682; */
     font-size: 24px;
     font-weight: 400;
-    /* border-radius: 30px; */
-    /* padding: 8px 32px; */
     margin-bottom: 30px;
 }
-}
+} */

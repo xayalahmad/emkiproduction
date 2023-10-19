@@ -12,6 +12,8 @@ import { Link } from 'react-router-dom';
 
 export default function EventsCard({event}) {
   const { t, i18n } = useTranslation()
+
+  
   return (
     <Link target={'_blank'} to={event?.translations[0]?.ticketLink}>
     <Box 

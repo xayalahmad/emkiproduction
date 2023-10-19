@@ -3,7 +3,7 @@
     /* white-space: nowrap; */
     display: flex;
     overflow-x: scroll;
-    padding: 48px 0;
+    /* padding: 48px 0; */
 }
 
 .card{
@@ -12,10 +12,10 @@
     min-height: 186px;
     max-width: 186px;
     max-height: 186px;
-    background-color: #222b45;
+    background-color: #151a30;
     border-radius: 16px;
     padding: 25px;
-    border: 1px solid #e32682;
+    border: 1px solid #192038;
     display: flex;
     justify-content: center;
     align-items: center;

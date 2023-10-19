@@ -1,6 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/euclid-circular-a');
 .container{
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 8px;
   height: 48px;
   padding-top: 4px;
@@ -12,7 +12,7 @@
 .itemDark {
     font-family: 'Euclid Circular A', sans-serif;
     font-size: 16px;
-  color: #1c3da9;
+  color: #151a30;
   /* background-color: aqua; */
 
 }
@@ -26,7 +26,7 @@ color: #828282;
 .itemNav {
   font-family: 'Euclid Circular A', sans-serif;
   font-size: 16px;
-color: #151a30;
+color: #fff;
 /* background-color: aqua; */
 /*  */
 }
@@ -41,7 +41,7 @@ color: #151a30;
   color: #151A30;
 }
 .languageNav{
-  color: #101426;
+  color: #fff;
 }
 
 

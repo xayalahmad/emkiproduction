@@ -11,8 +11,11 @@ import { setLanguage } from '../stores/language';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { useState, useEffect } from 'react';
+import { useRef } from 'react';
 export default function Language({color, bgColor}) {
   const dispatch = useDispatch()
+  const leftArrow = useRef()
+  const rightArrow = useRef()
   const { language } = useSelector(state => state.language)
   const [getlang, setGetLang] = useState([]);
   const [langCode, setLangCode] = useState('');
@@ -44,6 +47,12 @@ export default function Language({color, bgColor}) {
     }
     getUsers()
 }, [])
+// leftArrow.onclick = function () {
+//   document.getElementById('container').scrollLeft += 20;
+// };
+// rightArrow.onclick = function () {
+//   document.getElementById('container').scrollLeft -= 20;
+// };
   return (
     <>
     <Box className={styles.container}>
@@ -62,6 +71,15 @@ export default function Language({color, bgColor}) {
         </Box>
         }
         <Select
+           inputProps={{
+            MenuProps: {
+                MenuListProps: {
+                    sx: {
+                        backgroundColor: '#151a30'
+                    }
+                }
+            }
+        }}
          sx={{
           padding: 0,
             color: {color},
@@ -78,7 +96,7 @@ export default function Language({color, bgColor}) {
               border: 'none'
             },
             '.MuiSvgIcon-root': {
-                fill: '#151a30',
+                fill: '#fff',
             },
     
           }}
@@ -87,7 +105,7 @@ export default function Language({color, bgColor}) {
           value={age}
           onChange={handleChange}
           displayEmpty
-          inputProps={{ 'aria-label': 'Without label' }}
+          // inputProps={{ 'aria-label': 'Without label' }}
         >
           {/* <MenuItem onClick={() => clickHandle('AZ')} className={styles.item} value={10}><Box className={styles.item}>AZ</Box>
           </MenuItem>

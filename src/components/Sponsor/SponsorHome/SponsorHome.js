@@ -65,7 +65,8 @@ export default function SponsorHome({ filter }) {
                     :
                     <Box
                         style={{
-                            // backgroundColor: '#151A30',
+                    borderRadius: '0 0 40px 40px',
+                    // backgroundColor: '#151A30',
                         }}
                         className={styles.aboutBg}
                     >
